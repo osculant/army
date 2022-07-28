@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 // Add the following routes
 $route['upload-image'] = 'Control_admin';
 $route['store-image'] = 'Control_admin/upload_file';
+$route['admin-login'] = 'Admin/login';

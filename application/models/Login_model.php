@@ -13,6 +13,17 @@ function validate($email,$password){
 }
 
 
+  function admin_validate($email,$password){
+  
+  $pass = md5($password);  
+
+  $this->db->where('user_name',$email);
+  $this->db->where('password',$pass);
+  $result = $this->db->get('admin');
+  return $result->row_array();
+}
+
+
  
 
 
