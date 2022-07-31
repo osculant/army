@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends CI_Controller {
   function __construct(){
     parent::__construct();
-    // $this->load->model('Admin_model');
+    $this->load->model('Model_welcome');
     $this->load->model('User_model');
     $this->load->library('email');
   }
@@ -42,6 +42,44 @@ function index(){
     $this->load->view('admin/change_password');
   }
 
+  public function add_content(){
+    $this->index();
+    $this->load->view('admin/add_content');
+  }
+
+  public function view_content(){
+    $this->index();
+    $data['content'] = $this->Model_welcome->get_data();
+    $this->load->view('admin/view_content',$data);
+  }
+
+
+  public function add_content_func(){
+
+    $arr = array(
+      'name'=> $this->input->post('name'),
+      'link'=> $this->input->post('link'),
+      'description'=> $this->input->post('description'),
+    );
+
+    $key = $this->db->insert('links',$arr);
+
+
+    if($key){
+      echo "done";
+    }
+
+
+  }
+
+
+  public function delete_function(){
+    $id = $this->input->post('id');
+
+    $this->db->where('id',$id);
+    $this->db->delete('links');
+    echo "deleted";
+  }
 	
  
 

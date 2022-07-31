@@ -5,6 +5,7 @@
 
 
 public function get_data(){
+    $this->db->order_by('id','desc');
   $get = $this->db->get('links')->result_array();
   return $get;
 }

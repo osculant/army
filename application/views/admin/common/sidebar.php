@@ -14,15 +14,15 @@
             <li class="menu-title">Main</li>
 
             <li>
-                <a href="<?php echo base_url('admin/dashboard') ?>" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                <a href="<?php echo base_url('index.php/admin/dashboard') ?>" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
             </li>
             
            
 
          
-            <!--<li>-->
-            <!--    <a href="<?php echo base_url('admin/add_payment_gateway') ?>" class="waves-effect"><i class="mdi mdi-account-location"></i><span>  Payment Gateway  </a>-->
-            <!--</li>-->
+          <!--   <li>
+            <a href="<?php echo base_url('index.php/admin/add_content') ?>" class="waves-effect"><i class="mdi mdi-account-location"></i><span>  Add Content  </a>
+            </li> -->
 
 
             
@@ -31,13 +31,13 @@
                 <a href="vendors.php" class="waves-effect"><i class="mdi mdi-account-location"></i><span> Vendors <b>(<?php //echo vendorcount();?>)</b></span></a>
             </li> -->
             
-            <!-- <li class="has_sub">
-                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cube-outline"></i><span> Packages <span class="pull-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+            <li class="has_sub">
+                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cube-outline"></i><span> Content <span class="pull-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                 <ul class="list-unstyled">
-                    <li><a href="add_packages.php">Add Packages</a></li>
-                    <li><a href="view_packages.php">View Packages</a></li>
+                    <li><a href="<?php echo base_url('index.php/admin/add_content') ?>">Add Content</a></li>
+                    <li><a href="<?php echo base_url('index.php/admin/view_content') ?>">View Content</a></li>
                 </ul>
-            </li> -->
+            </li>
           <!--   <li class="has_sub">
                 <a href="javascript:void(0);" class="waves-effect active"><i class="mdi mdi-cube-outline"></i><span> About Us <span class="pull-right"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                 <ul class="list-unstyled">

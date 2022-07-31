@@ -21,8 +21,8 @@
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                        
-                                        <a class="dropdown-item" href="<?php echo base_url('admin/change_password') ?>"><i class="dripicons-lock text-muted"></i> Change Password</a>
-                                        <a class="dropdown-item" href="<?php echo base_url('login/logout') ?>"><i class="dripicons-exit text-muted"></i> Logout</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('index.php/admin/change_password') ?>"><i class="dripicons-lock text-muted"></i> Change Password</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('index.php/login/logout') ?>"><i class="dripicons-exit text-muted"></i> Logout</a>
                                     </div>
                                 </li>
                             </ul>
