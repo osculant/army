@@ -5,20 +5,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
-      <title>Demo</title>
-      <link rel="shortcut icon" type="image/x-icon" href="https://inspirestory.co.in/amazing-fact/assets/img/favicon.png">
+      <title>DEWS</title>
+      <!-- <link rel="shortcut icon" type="image/x-icon" href="https://inspirestory.co.in/amazing-fact/assets/img/favicon.png"> -->
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/bootstrap.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/fontawesome.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/all.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/swiper.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/circle.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/style.css">
+
+      
    </head>
-   <body>
+   <body >
       <div class="main-wrapper">
-          <div class="navbar two-action no-hairline">
+          <div class="navbar two-action no-hairline" style="background-color: black;">
             <div class="navbar-inner d-flex align-items-center">
-               <div class="sliding custom-title" style="text-align: center;">Demo Text</div>
+               <p><a href="javascript:history.back()" ><img src="<?php echo base_url('assets/5626618.png') ?>" style="width: 25px;    position: absolute;
+    top: 6px;"></a></p>
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">DEWS</div>
                <div class="right d-flex">
                   
                </div>
@@ -33,7 +37,13 @@
                       
                   
                   <?php foreach($data as $key){ ?>
+
+
+
                     <li style="display:inline-table;width:47%;margin:5px">
+                        
+                        <img src="<?php echo base_url().$key['icon'] ?>" style="border-radius: 50% !important;">
+
                         <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key['id'].'') ?>" class="item-link item-content" style="padding:15px">
                            <div class="item-avatar"> </div>
                            <div class="item-col">

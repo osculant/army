@@ -18,6 +18,8 @@
       <div class="main-wrapper">
           <div class="navbar two-action no-hairline">
             <div class="navbar-inner d-flex align-items-center">
+               <p><a href="javascript:history.back()" ><img src="<?php echo base_url('assets/5626618.png') ?>" style="width: 25px;    position: absolute;
+    top: 6px;"></a></p>
                <div class="sliding custom-title" style="text-align: center;">Details</div>
                <div class="right d-flex">
                   

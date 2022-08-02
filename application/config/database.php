@@ -98,10 +98,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'army',
+	'hostname' => '166.62.30.147',
+	'username' => 'amit',
+	'password' => 'wh@t@n!dea$irj!',
+	'database' => 'dews',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

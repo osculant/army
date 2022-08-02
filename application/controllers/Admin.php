@@ -56,13 +56,78 @@ function index(){
 
   public function add_content_func(){
 
+
+
+
+        if(isset($_FILES['icon']["name"])){
+            $config['upload_path'] = "./assets/files/";
+              $config['allowed_types'] = 'jpg|jpeg|png';
+              $this->load->library('upload', $config);
+
+              if (!$this->upload->do_upload('icon') ) {
+                  // $this->load->view('admin/admin', $error);
+                  $error = array('error' => $this->upload->display_errors());
+                  echo '<p style="color:red">The filetype you are attempting to upload is not allowed.</p>';
+                  // print_r($error);
+              } else {
+                $data = array('image_metadata' => $this->upload->data());
+                // echo  $data['image_metadata']["file_name"];
+                $name=$data['image_metadata']["file_name"];
+                $path= 'assets/files/'.$name;
+                // print_r($data);
+                $imagearr=array(
+                  
+                  
+                  'icon'   => $path,
+              
+                );
+
+               
+            }
+        } 
+
+
+        if(isset($_FILES['audio']["name"])){
+
+
+              $config['upload_path'] = "./assets/files/";
+               $config['allowed_types'] = 'mp3|ogg';
+              $config['encrypt_name'] = TRUE;
+              $this->load->library('upload', $config);
+
+              if (!$this->upload->do_upload('audio') ) {
+                  // $this->load->view('admin/admin', $error);
+                  $error = array('error' => $this->upload->display_errors());
+                  print_r($error);
+              } else {
+                $data = array('image_metadata' => $this->upload->data());
+                // echo  $data['image_metadata']["file_name"];
+                $name=$data['image_metadata']["file_name"];
+                $path= 'assets/files/'.$name;
+                // print_r($data);
+                $audio_arr=array(
+                  
+                  
+                  'audio'   => base_url().$path,
+              
+                );
+
+               
+            }
+        } 
+
+
     $arr = array(
       'name'=> $this->input->post('name'),
       'link'=> $this->input->post('link'),
       'description'=> $this->input->post('description'),
+      'icon'=> $imagearr['icon'],
+      'audio'=> $audio_arr['audio'],
     );
 
-    $key = $this->db->insert('links',$arr);
+
+
+    // $key = $this->db->insert('links',$arr);
 
 
     if($key){
