@@ -108,7 +108,7 @@
     bottom: 0;
     background-color: gray;
     border: none;
-    height: 53px;">Continue</button></a>
+    height: 53px;">Continue <i class="fa fa-arrow-circle-right"></i></button></a>
         
 
   </div>
