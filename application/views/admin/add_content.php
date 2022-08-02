@@ -65,6 +65,13 @@
                                        <label>Title</label>
                                        <input type="text" class="form-control" name="name" placeholder="Enter Title">
 
+                                       <label>Icon</label>
+                                       <input type="file" class="form-control" name="icon">
+
+
+
+
+
                                        <label>Description</label>
                                        <textarea class="form-control" name="description"></textarea>
 
@@ -72,6 +79,9 @@
                                        <label>Video Link</label>
                                        <input type="text" name="link" class="form-control">
 
+
+                                       <label>Audio File</label>
+                                       <input type="file" name="audio" class="form-control">
                                        <br>
 
                                        <button class="btn btn-success">Submit <i class="fa fa-spinner fa-spin" style="display:none" id="spinner"></i></button>

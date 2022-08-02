@@ -417,9 +417,9 @@ body.overlay-body:before {
 	opacity: 0;
 }
 .navbar-inner {
-	background: #1B5A90;
+	background: Black;
 	width: 100%;
-	padding: 15px;
+	padding: 9px;
 }
 .navbar a {
 	color: #fff;
@@ -5449,8 +5449,8 @@ ul li span.trash-icon {
 	position: relative;
 }
 .social-media-col .list li .item-content {
-	border-radius: 10px;
-	background-color:#1B5A90 !important;
+	border-radius: 12px;
+	background-color:darkcyan !important;
 	font-size: 14px;
 }
 .social-media-col .list li + li {

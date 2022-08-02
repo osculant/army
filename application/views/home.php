@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Demo</title>
+  <title>DEWS</title>
 
       <style>
          
@@ -47,29 +47,28 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
       <!--script end-->
 </head>
-<body style="background-color: #b1ade2;
-background-image: linear-gradient(315deg, #b1ade2 0%, #7ddff8 74%);">
+<body style="background-color: black">
 
   <div class="container">
 
   <div class="row">
-  <div class="col-12" style="margin-top: 140px;">
+  <!-- <div class="col-12" style="margin-top: 140px;">
       <div class="tag"><h1 style="color: white; text-align: center;text-shadow: 2px 2px 4px black;">WELCOME TO</h1></div>
-  </div>
+  </div> -->
   </div>
     
     <div class="row d-flex justify-content-center">
       <div class="first">
-        <img src="<?php echo base_url('assets/images/main.png') ?>" style="width: 87px;margin-top: 50px;">
+        <img src="<?php echo base_url('assets/logo.jpeg') ?>" style="width: 100%;margin-top: 50px;">
       </div>
 
     </div>
 
 
-    <div class="row" style="margin-top: 9px;">
+    <!-- <div class="row" style="margin-top: 9px;">
       <div class="col-12">
       <div class="tag"><h2 style="color: white; text-align: center;text-shadow: 2px 2px 4px black;">DEMO APP</h2></div>
-
+ -->
 
       <!-- <div class="cover_image">
         <center><img src="<?php echo base_url('assets/images/mainimage.png') ?>" style="width: 21rem;margin-top: 22px;"></center>
@@ -93,16 +92,25 @@ background-image: linear-gradient(315deg, #b1ade2 0%, #7ddff8 74%);">
       </div> -->
 
 
-      <div class="col-12" style="margin-top: 370px;">
+     <!--  <div class="col-12" style="position: absolute; bottom: 0">
       <div class="buttons">
        <a href="<?php echo base_url('index.php/welcome/main') ?>"> <button class="btn btn-info" style="width: -webkit-fill-available;margin-top: 17px;border-radius: 15px;border: 4px solid #17a2b8;">Continue</button></a>
         
         
       </div>
       </div>
-
+ -->
 
     </div>
+
+
+<a href="<?php echo base_url('index.php/welcome/main') ?>"> <button class="btn btn-info btn-block" style="position: absolute;bottom:0;position: absolute;
+    bottom: 0;
+    background-color: gray;
+    border: none;
+    height: 53px;">Continue</button></a>
+        
+
   </div>
 
 
