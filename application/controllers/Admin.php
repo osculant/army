@@ -87,34 +87,54 @@ function index(){
         } 
 
 
-        if(isset($_FILES['audio']["name"])){
 
+        if ($_FILES['audio']['name'] != "") {
+            if (($_FILES['audio']['type'] == "audio/mp3") || ($_FILES['audio']['type'] == "audio/mpeg")) {
+                if ($_FILES["audio"]["size"] < 16777216) {           
+                        move_uploaded_file($_FILES["audio"]["tmp_name"], "assets/files/" . $_FILES["audio"]["name"]);
+                       // echo "File has been stored in your uploads directory.";
+                      }
+                else {    
 
-              $config['upload_path'] = "./assets/files/";
-               $config['allowed_types'] = 'mp3|ogg';
-              $config['encrypt_name'] = TRUE;
-              $this->load->library('upload', $config);
+                  // echo "Please upload a file that is under 2 mb!";
 
-              if (!$this->upload->do_upload('audio') ) {
-                  // $this->load->view('admin/admin', $error);
-                  $error = array('error' => $this->upload->display_errors());
-                  print_r($error);
-              } else {
-                $data = array('image_metadata' => $this->upload->data());
-                // echo  $data['image_metadata']["file_name"];
-                $name=$data['image_metadata']["file_name"];
-                $path= 'assets/files/'.$name;
-                // print_r($data);
-                $audio_arr=array(
-                  
-                  
-                  'audio'   => base_url().$path,
+                }
+                
+            } else {
               
-                );
+              // echo "Please upload a mp3 file!";
+        
+            exit;}
+        }
+
+
+        // if(isset($_FILES['audio']["name"])){
+
+
+        //       $config['upload_path'] = "./assets/files/";
+        //        $config['allowed_types'] = "mp3";
+        //       $this->load->library('upload', $config);
+
+        //       if (!$this->upload->do_upload('audio') ) {
+        //           // $this->load->view('admin/admin', $error);
+        //           $error = array('error' => $this->upload->display_errors());
+        //           print_r($error);
+        //       } else {
+        //         $data = array('image_metadata' => $this->upload->data());
+        //         // echo  $data['image_metadata']["file_name"];
+        //         $name=$data['image_metadata']["file_name"];
+        //         $path= 'assets/files/'.$name;
+        //         // print_r($data);
+        //         $audio_arr=array(
+                  
+                  
+        //           'audio'   => base_url().$path,
+              
+        //         );
 
                
-            }
-        } 
+        //     }
+        // } 
 
 
     $arr = array(
@@ -122,12 +142,12 @@ function index(){
       'link'=> $this->input->post('link'),
       'description'=> $this->input->post('description'),
       'icon'=> $imagearr['icon'],
-      'audio'=> $audio_arr['audio'],
+      'audio'=> $_FILES["audio"]["name"],
     );
 
+    // print_r($arr);
 
-
-    // $key = $this->db->insert('links',$arr);
+    $key = $this->db->insert('links',$arr);
 
 
     if($key){

@@ -42,9 +42,10 @@
 
                     <li style="display:inline-table;width:47%;margin:5px">
                         
-                        <img src="<?php echo base_url().$key['icon'] ?>" style="border-radius: 50% !important;">
+                        <img src="<?php echo base_url().$key['icon'] ?>" style="    width: fit-content;
+    height: 12rem;">
 
-                        <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key['id'].'') ?>" class="item-link item-content" style="padding:15px">
+                        <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key['id'].'') ?>" class="item-link item-content" style="padding:15px;    margin-top: -6px;position: inherit;">
                            <div class="item-avatar"> </div>
                            <div class="item-col">
                               <div class="item-title"><?php echo $key['name'] ?></div>
