@@ -38,6 +38,17 @@ public function otp(){
 }
 
 
+public function contact_us(){
+  $this->load->view('contact_us');
+}
+
+
+
+public function about_us(){
+  $this->load->view('about_us');
+}
+
+
 public function forgot_password(){
   $this->load->view('forget_password');
 }

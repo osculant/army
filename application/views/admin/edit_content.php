@@ -57,33 +57,49 @@
                             <div class="row">
                                <div class="col-md-12">
 
-                                <h1>ADD CONTENT</h1>
+                                <h1>EDIT CONTENT</h1>
                                 <hr>
 
                                    <form id="submit_form">
                                        
                                        <label>Title</label>
-                                       <input type="text" class="form-control" name="name" placeholder="Enter Title" required>
+                                       <input type="text" class="form-control" name="name" placeholder="Enter Title" value="<?php echo $content_detail['name'] ?>">
 
+
+                                       <hr>
+                                       <?php if($content_detail['icon'] != ""){ ?>
+                                       <img src="<?php echo base_url().$content_detail['icon'] ?>" style="width:7rem">
+                                       <?php } ?>
+                                       <br> 
                                        <label>Icon</label>
-                                       <input type="file" class="form-control" name="icon" required>
+                                       <input type="file" class="form-control" name="icon">
 
 
 
 
 
                                        <label>Description</label>
-                                       <textarea class="form-control" name="description"></textarea>
+                                       <textarea class="form-control" name="description"><?php echo $content_detail['description'] ?></textarea>
 
 
                                        <label>Video Link</label>
-                                       <input type="text" name="link" class="form-control" required>
+                                       <input type="text" name="link" class="form-control" value="<?php echo $content_detail['link'] ?>">
 
 
                                        <label>Audio File</label>
                                        <input type="file" name="audio" class="form-control">
+                                        <?php if($content_detail['audio'] != ""){ ?>
+
+                                         <audio controls>
+
+                                              <source src="<?php echo base_url() ?>assets/files/<?php echo $content_detail['audio'] ?>" type="audio/mp3">
+                                            Your browser does not support the audio element.
+                                        </audio>
+
+                                        <?php } ?>
                                        <br>
 
+                                       <input type="hidden" name="id" value="<?php echo $content_detail['id'] ?>">
                                        <button class="btn btn-success">Submit <i class="fa fa-spinner fa-spin" style="display:none" id="spinner"></i></button>
                                    </form>
                                </div>
@@ -146,7 +162,7 @@ $(document).ready(function(){
     
         
           $.ajax({
-                url:"<?php echo base_url('index.php/Admin/add_content_func');?>",
+                url:"<?php echo base_url('index.php/Admin/edit_content_func');?>",
                 method:'POST',
                 data:new FormData(this),
                 contentType: false,

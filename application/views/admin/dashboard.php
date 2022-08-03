@@ -57,26 +57,16 @@
                             <div class="row">
                                 <div class="col-md-6 col-xl-4">
                                     <div class="mini-stat clearfix bg-white">
-                                        <span class="mini-stat-icon bg-purple mr-0 float-right"><i class="fa fa-use"></i></span>
+                                        <span class="mini-stat-icon bg-purple mr-0 float-right"><i class="fa fa-content"></i></span>
                                         <div class="mini-stat-info">
-                                            <span class="counter text-purple"><?php //echo male_user();?></span>
-                                            Total 
+                                             <span class="counter text-purple"><?php echo $data;?></span>
+                                            Total Content
                                         </div>
                                         <div class="clearfix"></div>
                                         <p class=" mb-0 m-t-20 text-muted"></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xl-4">
-                                    <div class="mini-stat clearfix bg-white">
-                                        <span class="mini-stat-icon bg-blue-grey mr-0 float-right"><i class="fa fa-user"></i></span>
-                                        <div class="mini-stat-info">
-                                            <span class="counter text-blue-grey"><?php //echo female_user()?></span>
-                                            Total 
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <p class="text-muted mb-0 m-t-20"></p>
-                                    </div>
-                                </div>
+                                
                                 
                             </div>
 

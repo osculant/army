@@ -40,10 +40,10 @@
   
   
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-image: url('<?php echo base_url('assets/bg.jpeg') ?>');background-size: cover;">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url() ?>">ADMIN</a>
+    <a href="<?php echo base_url() ?>" style="color: white;font-weight: bold;text-shadow: 2px 2px 2px black;">ADMIN</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
