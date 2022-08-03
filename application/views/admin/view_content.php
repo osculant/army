@@ -81,6 +81,9 @@
                                                     <td><?php echo $key['description']; ?></td>
                                                    
                                                     <td>
+                                                        
+                                                        <a class="btn btn-success" href="<?php echo base_url('index.php/admin/edit_content?id='.$key['id'].'') ?>"><i class="fa fa-edit"></i></a>
+
                                                         <button  style="margin:5px" class="btn btn-danger btn-sm" data-id="<?php echo $key['id'] ?>" onclick="  delete_pro(this)"><i class="fa fa-trash" ></i></button>
                                                     </td>
                                                 </tr>

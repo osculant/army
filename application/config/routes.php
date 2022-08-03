@@ -56,3 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['upload-image'] = 'Control_admin';
 $route['store-image'] = 'Control_admin/upload_file';
 $route['admin-login'] = 'Admin/login';
+$route['contact_us'] = 'welcome/contact_us';
+$route['about_us'] = 'welcome/about_us';
