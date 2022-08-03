@@ -18,6 +18,12 @@ public function get_content_data($info){
   return $get;
 }
 
+public function get_data_detail($info){
+  $this->db->where('id',$info);
+  $get = $this->db->get('links')->row_array();
+  return $get;
+}
+
 public function get_total_content(){
   $get = $this->db->get('links')->num_rows();
 
