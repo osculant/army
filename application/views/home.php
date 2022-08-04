@@ -118,8 +118,9 @@
   </div>
 
 
-<a href="<?php echo base_url('index.php/welcome/main') ?>"> <button class="btn btn-info btn-block" style="position: absolute;bottom:0;position: absolute;
+<a href="<?php echo base_url('index.php/welcome/main') ?>" style="    position: absolute;
     bottom: 0;
+    width: 100%;"> <button class="btn btn-info btn-block" style="
     background-color: black;
     border: none;
     height: 53px;">Continue <i class="fa fa-arrow-circle-right"></i></button></a>
