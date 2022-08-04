@@ -52,82 +52,60 @@
 
   <div class="container">
 
-  <div class="row" style="margin-top: 0px;">
+       <div class="row" style="margin-top: 0px;">
 
-    <div class="col-12">
-      <img src="<?php echo base_url('assets/sun.png') ?>" style="width: 100%;">
-    </div>
+          <div class="col-12">
+            <img src="<?php echo base_url('assets/sun.png') ?>" style="width: 100%;">
+          </div>
 
-  <div class="col-12" style="margin-bottom:-79px;margin-top: 27px;" >
-
-
-
-
+          <div class="col-12" style="margin-bottom:-104px;margin-top: 57px;" >
+            <p style="font-size:1.2rem;text-align: center;color: yellowgreen;font-weight: bold;">DHRUVA ECO-FRIENDLY <br> WASTE DISPOSAL SYS</p>
+            <br>
 
 
-    <p style="font-size:1.2rem;
-    text-align: center;
-    color: yellowgreen;font-weight: bold;">DHRUVA ECO-FRIENDLY <br> WASTE DISPOSAL SYS</p>
-  </div>
+          </div>
 
-  <div class="col-3"  >
-    <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
-  </div>
+          <div class="col-3"  >
+            <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
+          </div>
 
 
-  <div class="col-3 offset-6"  >
-    <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
-  </div>
+          <div class="col-3 offset-6"  >
+            <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
+          </div>
 
-  </div>
+         
+
+        </div>
+
+        <div class="row" style="margin-top:20px">
+           <div class="col-12">
+            <center>
+              <a class="btn btn-info" href="<?php echo base_url('index.php/welcome/main') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
+            </center>
+          </div>
+        </div>
     
-    <div class="row d-flex justify-content-center">
-      <div class="first">
-        <!-- <img src="<?php echo base_url('assets/logo.jpeg') ?>" style="width: 100%;margin-top: 50px;"> -->
-      </div>
+        
+         <div class="row" style="margin-top:135px">
+          
+            <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;left: 0;bottom:0">
+      
+            <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 43%;    position: absolute;right: 0;bottom:0">
+          
+          </div>
 
-    </div>
 
 
   
-
-    </div>
-
-
-    <div class="row" style="margin-top:148px">
-        
-
-        
-
-          <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;
-    left: 0;">
-      
-
-
-        
-
-          <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 43%;    position: absolute;
-    right: 0;">
-       
-
-
-    </div>
-
-
-
-  </div>
-
-
-<a href="<?php echo base_url('index.php/welcome/main') ?>" style="    position: absolute;
+<!-- 
+<a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/main') ?>" style="    position: absolute;
     bottom: 0;
-    width: 100%;"> <button class="btn btn-info btn-block" style="
-    background-color: black;
-    border: none;
-    height: 53px;">Continue <i class="fa fa-arrow-circle-right"></i></button></a>
+    width: 100%;">Continue <i class="fa fa-arrow-circle-right"></i></a>
         
 
 
-
+ -->
   </div>
 
 </body>
