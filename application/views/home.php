@@ -99,14 +99,14 @@
 
         
 
-          <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 400px;    position: absolute;
+          <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;
     left: 0;">
       
 
 
         
 
-          <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 400px;    position: absolute;
+          <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 43%;    position: absolute;
     right: 0;">
        
 
