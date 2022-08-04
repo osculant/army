@@ -22,7 +22,8 @@
           }
         }
      
-     
+
+
       </style>
       <!--links-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,73 +48,82 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
       <!--script end-->
 </head>
-<body style="background-color: black">
+<body style="background-color: teal">
 
   <div class="container">
 
-  <div class="row">
-  <!-- <div class="col-12" style="margin-top: 140px;">
-      <div class="tag"><h1 style="color: white; text-align: center;text-shadow: 2px 2px 4px black;">WELCOME TO</h1></div>
-  </div> -->
+  <div class="row" style="margin-top: 0px;">
+
+    <div class="col-12">
+      <img src="<?php echo base_url('assets/sun.png') ?>" style="width: 100%;">
+    </div>
+
+  <div class="col-12" style="margin-bottom:-79px;margin-top: 27px;" >
+
+
+
+
+
+
+    <p style="font-size:1.2rem;
+    text-align: center;
+    color: yellowgreen;font-weight: bold;">DHRUVA ECO-FRIENDLY <br> WASTE DISPOSAL SYS</p>
+  </div>
+
+  <div class="col-3"  >
+    <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
+  </div>
+
+
+  <div class="col-3 offset-6"  >
+    <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
+  </div>
+
   </div>
     
     <div class="row d-flex justify-content-center">
       <div class="first">
-        <img src="<?php echo base_url('assets/logo.jpeg') ?>" style="width: 100%;margin-top: 50px;">
+        <!-- <img src="<?php echo base_url('assets/logo.jpeg') ?>" style="width: 100%;margin-top: 50px;"> -->
       </div>
 
     </div>
 
 
-    <!-- <div class="row" style="margin-top: 9px;">
-      <div class="col-12">
-      <div class="tag"><h2 style="color: white; text-align: center;text-shadow: 2px 2px 4px black;">DEMO APP</h2></div>
- -->
+  
 
-      <!-- <div class="cover_image">
-        <center><img src="<?php echo base_url('assets/images/mainimage.png') ?>" style="width: 21rem;margin-top: 22px;"></center>
-      </div> -->
+    </div>
 
 
-      <!-- <div class="col-12">
-      <div class="buttons">
-       <a href="<?php echo base_url('index.php/welcome/signup') ?>"> <button class="btn btn-info" style="width: -webkit-fill-available;margin-top: 17px;border-radius: 15px;border: 4px solid #17a2b8;">Signup</button></a>
+    <div class="row" style="margin-top:148px">
         
-        
-      </div>
-      </div>
 
-      <div class="col-12">
-      <div class="buttons">
+        
+
+          <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 400px;    position: absolute;
+    left: 0;">
+      
+
+
+        
+
+          <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 400px;    position: absolute;
+    right: 0;">
        
-         <a href="<?php echo base_url('index.php/welcome/login') ?>"><button class="btn btn-info" style="background-color: transparent;width: -webkit-fill-available;margin-top: 17px;color: #17a2b8;border:2px solid #17a2b8 ;border-radius: 15px;margin-bottom: 30px;">Login</button></a>
-        
-      </div>
-      </div> -->
 
-
-     <!--  <div class="col-12" style="position: absolute; bottom: 0">
-      <div class="buttons">
-       <a href="<?php echo base_url('index.php/welcome/main') ?>"> <button class="btn btn-info" style="width: -webkit-fill-available;margin-top: 17px;border-radius: 15px;border: 4px solid #17a2b8;">Continue</button></a>
-        
-        
-      </div>
-      </div>
- -->
 
     </div>
 
 
-<a href="<?php echo base_url('index.php/welcome/main') ?>"> <button class="btn btn-info btn-block" style="position: absolute;bottom:0;position: absolute;
-    bottom: 0;
-    background-color: gray;
-    border: none;
-    height: 53px;">Continue <i class="fa fa-arrow-circle-right"></i></button></a>
-        
 
   </div>
 
 
+<a href="<?php echo base_url('index.php/welcome/main') ?>"> <button class="btn btn-info btn-block" style="position: absolute;bottom:0;position: absolute;
+    bottom: 0;
+    background-color: black;
+    border: none;
+    height: 53px;">Continue <i class="fa fa-arrow-circle-right"></i></button></a>
+        
 
 
 
