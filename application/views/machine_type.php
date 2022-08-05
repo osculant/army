@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
       <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>normalize.css">
@@ -139,7 +140,7 @@
 
 
 
-                    <li style="width:100%;margin:5px">
+                    <li style="width:100%;margin:5px" class="animate__animated animate__lightSpeedInLeft">
                         
                         <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>">
                         <div class="card" style="font-size: 1.1rem;font-weight: 700;padding: 27px;height: 10rem;text-align: center;border-radius: 13px;background-color: teal;color: white;">
