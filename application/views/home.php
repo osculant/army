@@ -95,7 +95,7 @@
             
 
 
-            <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/machine_type') ?>" style="position: absolute;
+            <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/content2') ?>" style="position: absolute;
     bottom: 0;background-color: black;border:none;
     ">Continue <i class="fa fa-arrow-circle-right"></i></a>
           </div>

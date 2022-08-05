@@ -179,7 +179,7 @@
                   <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
     font-size: 1.5rem;"></i></p>
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">DEWS</div>
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"> DEWS <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"></div>
              
             </div>
          </div>

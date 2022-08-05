@@ -13,6 +13,8 @@
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/swiper.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/circle.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
    </head>
    <body style="height:100vh">
       <div class="main-wrapper">
@@ -27,17 +29,29 @@
             </div>
          </div>
       </div>
-      <div class="page-content">
+
+
+
+ <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon9.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;top: 220px;opacity: 0.5;left:0">
+    <img class="animate__animated animate__bounceInLeft"   src="<?php echo base_url('assets/icon40.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;bottom: 305px;opacity: 0.5;right:0">
+    
+    
+    <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon90.png') ?>" style=" transition: 0.5s ease;   width: 13rem;position: absolute;bottom: 0;opacity: 0.5;left: 28%;right: 50%;">
+
+
+
+
+      <div class="page-content " >
          <div class="social-media-col pages-list-col">
-            <div class="container">
-            <iframe width="100%" height="315"
+            <div class="container animate__animated animate__bounceInRight" style="transition: 0.5s;">
+            <iframe width="100%" height="315" 
                 src="<?php echo $data['link'] ?>">
             </iframe>
             </div>
             <br>
             <center><h3><?php echo $data['name'] ?></h3></center>
             <hr>
-            <p style="text-align:justify;margin:5px"><?php echo $data['description'] ?></p>
+            <p class="animate__animated animate__bounceInUp" style="text-align:justify;margin:5px"><?php echo $data['description'] ?></p>
 
             <hr>
             <center>
