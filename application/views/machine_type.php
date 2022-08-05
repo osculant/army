@@ -26,6 +26,13 @@
       <script type="text/javascript" async="" src="<?php echo base_url('asets/loader/') ?>ga.js.download"></script>
       <script src="<?php echo base_url('asets/loader/') ?>snap.svg-min.js.download"></script>
 <style type="text/css">
+
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+
        .lds-ripple {
     display: inline-block;
     position: absolute;
@@ -139,6 +146,22 @@
 
       /*------------overlay for header end-----------*/
 
+.iconimg{
+
+    animation-name: example;
+  animation-duration: 4s;
+}
+
+
+
+@keyframes example {
+  0%   {left:0px; bottom:0px;}
+  25%  {left:20px; bottom:0px;}
+  50%  {left:50px; bottom:0px;}
+  70%  {left:100px; bottom:0px;}
+  100%  {left:250px; bottom:0px;}
+  
+}
 
 </style>
       
@@ -156,7 +179,7 @@
                   <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
     font-size: 1.5rem;"></i></p>
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">Machine's</div>
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">DEWS</div>
              
             </div>
          </div>
@@ -217,6 +240,9 @@
          </div>
       </div>
       
+
+
+      <img class="iconimg" src="<?php echo base_url('assets/icon3.png') ?>" style="position: absolute; bottom: 0;width: 12rem;">
 
 
       </div>   <!-- main div  -->

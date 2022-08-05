@@ -5452,6 +5452,8 @@ ul li span.trash-icon {
 	border-radius: 12px;
 	background-color:black !important;
 	font-size: 14px;
+	min-height: 7rem;
+    max-height: 7rem;
 }
 .social-media-col .list li + li {
 	margin-top: 15px;

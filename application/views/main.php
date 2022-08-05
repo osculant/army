@@ -86,6 +86,23 @@
 
 
 
+.iconimg{
+
+    position: absolute;
+    animation-name: example;
+  animation-duration: 4s;
+  bottom: 160px;
+}
+
+
+
+@keyframes example {
+  0%   {left:-150px; bottom:160px;}
+  25%  {left:-100px; bottom:160px;}
+  50%  {left:-50px; bottom:160px;}
+  75%  {left:0px; bottom:160px;}
+ 
+}
 
 
 </style>
@@ -138,6 +155,12 @@
 <!-- overlay end -->
 
 
+    <img  src="<?php echo base_url('assets/icon9.png') ?>" style="    width: 13rem;position: absolute;top: 220px;opacity: 0.5;left:0">
+    <img  src="<?php echo base_url('assets/icon40.png') ?>" style="    width: 13rem;position: absolute;bottom: 220px;opacity: 0.5;right:0">
+    
+    
+    <img  src="<?php echo base_url('assets/icon6.png') ?>" style="    width: 13rem;position: absolute;bottom: 0;opacity: 0.5;left: 28%;right: 50%;">
+
       <div class="page-content" style="height:100%">
          <div class="social-media-col pages-list-col">
             <div class="container">
@@ -149,7 +172,7 @@
 
 
 
-                    <li style="display:inline-table;width:47%;margin:5px" class="animate__animated  animate__bounce">
+                    <li style="display:inline-table;width:47%;margin:5px" class="animate__animated  animate__backInLeft">
                         
                         <img src="<?php echo base_url().$key['icon'] ?>" style="    width: fit-content;
     height: 12rem;">
@@ -170,14 +193,18 @@
                </div>
             </div>
          </div>
+
+
+          <!-- <img class="iconimg" src="<?php echo base_url('assets/icon4.png') ?>" style="width: 7rem;"> -->
+          
+
+      
+
       </div>
-       <!-- <div class="footer-cont">
-         <ul class="ul-footers">
-            <li><a href="notifications.html" class="icon-only" style="cursor: pointer;"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-            <li><a onclick="myFunction()" href="#" class="link icon-only darsjht"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
-            <li><a class="link icon-only darsjht"><i class="fa fa-share"></i></a></li>
-         </ul>
-          </div> -->
+      
+
+
+         
                    
        
        <script src="<?php echo base_url('assets/attachment') ?>/jquery-3.5.1.min.js.download"></script>
@@ -189,11 +216,7 @@
        <script src="<?php echo base_url('assets/loader/') ?>classie.js.download"></script>
        <script src="<?php echo base_url('assets/loader/') ?>svgLoader.js.download"></script>
        <script>
-         
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
+
 </script>
        
 
