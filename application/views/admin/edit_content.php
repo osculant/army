@@ -61,6 +61,15 @@
                                 <hr>
 
                                    <form id="submit_form">
+
+                                     <label>Machine Type</label>
+                                        <select name="machine_type" class="form-control" required>
+                                            <option style="" disabled>Choose</option>
+                                            <?php foreach($machine_type as $key ){ ?>
+                                                <option <?php if($content_detail['machine_type'] == $key['id'] ){ echo "selected"; } ?> value="<?php echo $key['id'] ?>"><?php echo $key['name'] ?></option>
+                                            <?php } ?>
+                                        </select>
+
                                        
                                        <label>Title</label>
                                        <input type="text" class="form-control" name="name" placeholder="Enter Title" value="<?php echo $content_detail['name'] ?>">
@@ -172,7 +181,7 @@ $(document).ready(function(){
                   
                   
                 if(data == "done"){
-                    alert('Inserted');
+                    alert('Updated');
 
                    window.location = "<?php echo base_url('index.php/admin/view_content')?>";
 

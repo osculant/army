@@ -45,11 +45,13 @@ function index(){
 
   public function add_content(){
     $this->index();
-    $this->load->view('admin/add_content');
+    $data['machine_type'] = $this->Model_welcome->get_machine();
+    $this->load->view('admin/add_content',$data);
   }
 
   public function view_content(){
     $this->index();
+    $data['machine_type'] = $this->Model_welcome->get_machine();
     $data['content'] = $this->Model_welcome->get_data();
     $this->load->view('admin/view_content',$data);
   }
@@ -58,6 +60,7 @@ function index(){
   public function edit_content(){
     $this->index();
     $info = $this->input->get('id');
+    $data['machine_type'] = $this->Model_welcome->get_machine();
     $data['content_detail'] = $this->Model_welcome->get_content_data($info);
     $this->load->view('admin/edit_content',$data);
   }
@@ -153,6 +156,7 @@ function index(){
       'description'=> $this->input->post('description'),
       'icon'=> $imagearr['icon'],
       'audio'=> $_FILES["audio"]["name"],
+      'machine_type'=> $this->input->post('machine_type'),
     );
 
     // print_r($arr);
@@ -258,6 +262,7 @@ $audio = $data['audio'];
       'description'=> $this->input->post('description'),
       'icon'=> $icon,
       'audio'=> $audio,
+            'machine_type'=> $this->input->post('machine_type'),
     );
 
     // print_r($arr);

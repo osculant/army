@@ -61,7 +61,17 @@
                                 <hr>
 
                                    <form id="submit_form">
-                                       
+
+
+                                        <label>Machine Type</label>
+                                        <select name="machine_type" class="form-control" required>
+                                            <option style="" disabled>Choose</option>
+                                            <?php foreach($machine_type as $key ){ ?>
+                                                <option value="<?php echo $key['id'] ?>"><?php echo $key['name'] ?></option>
+                                            <?php } ?>
+                                        </select>
+
+
                                        <label>Title</label>
                                        <input type="text" class="form-control" name="name" placeholder="Enter Title" required>
 

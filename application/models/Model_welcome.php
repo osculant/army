@@ -31,5 +31,17 @@ public function get_total_content(){
 }
     
 
+public function get_machine(){
+
+  $key = $this->db->get('machine_type')->result_array();
+  return $key;
+}
+
+public function get_data_by_machine($id){
+   $this->db->where('machine_type',$id);
+   $key = $this->db->get('links')->result_array();
+   return $key;
+}
+
   }
   ?>
