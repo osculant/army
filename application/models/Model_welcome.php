@@ -43,5 +43,11 @@ public function get_data_by_machine($id){
    return $key;
 }
 
+public function get_machine_name($id){
+  $this->db->where('id',$id);
+  $key = $this->db->get('machine_type')->row_array();
+  return $key;
+}
+
   }
   ?>

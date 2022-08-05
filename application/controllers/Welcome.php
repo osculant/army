@@ -34,6 +34,7 @@ public function machine_type(){
 
 public function main(){
   $id = $this->input->get('id');
+  $data['machine_name'] = $this->Model_welcome->get_machine_name($id);
   $data['data'] = $this->Model_welcome->get_data_by_machine($id);
   $this->load->view('main',$data);
 }

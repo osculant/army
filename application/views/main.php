@@ -99,7 +99,7 @@
                   <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
     font-size: 1.5rem;"></i></p>
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">DEWS</div>
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><?php echo $machine_name['name'] ?></div>
               <!--  <div class="right d-flex">
                   <p><a href="javascript:history.back()" class="btn btn-light btn-sm">
                   
