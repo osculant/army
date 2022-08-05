@@ -96,7 +96,7 @@
 
 
             <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/main') ?>" style="position: absolute;
-    bottom: 0;background-color: black;
+    bottom: 0;background-color: black;border:none;
     ">Continue <i class="fa fa-arrow-circle-right"></i></a>
           </div>
 
