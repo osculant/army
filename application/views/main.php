@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>normalize.css">
       <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>demo.css">
       <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>component.css">
@@ -92,6 +92,7 @@
       
    </head>
    <body >
+
       <div class="main-wrapper">
           <div class="navbar two-action no-hairline" style="background-color: black;">
             <div class="navbar-inner d-flex align-items-center">
@@ -148,7 +149,7 @@
 
 
 
-                    <li style="display:inline-table;width:47%;margin:5px">
+                    <li style="display:inline-table;width:47%;margin:5px" class="animate__animated  animate__bounce">
                         
                         <img src="<?php echo base_url().$key['icon'] ?>" style="    width: fit-content;
     height: 12rem;">

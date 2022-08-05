@@ -6,6 +6,7 @@
 
 public function get_data(){
     $this->db->order_by('id','desc');
+    $this->db->order_by('id','desc');
   $get = $this->db->get('links')->result_array();
   return $get;
 }
@@ -39,6 +40,7 @@ public function get_machine(){
 
 public function get_data_by_machine($id){
    $this->db->where('machine_type',$id);
+   $this->db->order_by('id','desc');
    $key = $this->db->get('links')->result_array();
    return $key;
 }

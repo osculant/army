@@ -132,18 +132,18 @@
          <div class="social-media-col pages-list-col">
             <div class="container">
                <div class="list">
-                  <ul style="display:inline-table">
+                  <ul>
                       
                   
                   <?php foreach($machine_type as $key){ ?>
 
 
 
-                    <li style="display:inline-table;width:47%;margin:5px">
+                    <li style="width:100%;margin:5px">
                         
                         <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>">
                         <div class="card" style="font-size: 1.1rem;font-weight: 700;padding: 27px;height: 10rem;text-align: center;border-radius: 13px;background-color: teal;color: white;">
-                           <p style="margin-top:17px"> <?php echo $key['name'] ?></p>
+                           <p style="margin-top:25px;font-size: 1.4rem;"> <?php echo $key['name'] ?></p>
                         </div>
                         </a>
                        
