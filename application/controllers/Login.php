@@ -5,6 +5,7 @@ class Login extends CI_Controller {
   function __construct(){
     parent::__construct();
     $this->load->model('Login_model');
+    $this->load->model('Model_welcome');
      $this->load->library('email');
   }
 
@@ -60,7 +61,8 @@ function switching(){
 
   if($user_type == 'admin'){
 
-    $this->load->view('admin/dashboard');
+     $data['data'] = $this->Model_welcome->get_total_content();
+    $this->load->view('admin/dashboard',$data);
   
   }elseif ($user_type == 'user') {
 
@@ -131,7 +133,8 @@ function admin_switching(){
  
  if ($user_type == 'admin') {
     
-    $this->load->view('admin/dashboard');
+    $data['data'] = $this->Model_welcome->get_total_content();
+    $this->load->view('admin/dashboard',$data);
   
   }
     

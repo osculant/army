@@ -85,9 +85,6 @@
       /*------------overlay for header end-----------*/
 
 
-
-
-
 </style>
       
    </head>
@@ -99,14 +96,8 @@
                   <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
     font-size: 1.5rem;"></i></p>
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">DEWS</div>
-              <!--  <div class="right d-flex">
-                  <p><a href="javascript:history.back()" class="btn btn-light btn-sm">
-                  
-                     <img src="<?php echo base_url('assets/5626618.png') ?>" style="width: 25px;margin-top: 15px;">
-                     BACK
-                  </a></p>
-               </div> -->
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;">Machine's</div>
+             
             </div>
          </div>
       </div>
@@ -137,28 +128,25 @@
 <!-- overlay end -->
 
 
-      <div class="page-content" style="height:100%">
+      <div class="page-content" style="height:100vh">
          <div class="social-media-col pages-list-col">
             <div class="container">
                <div class="list">
                   <ul style="display:inline-table">
                       
                   
-                  <?php foreach($data as $key){ ?>
+                  <?php foreach($machine_type as $key){ ?>
 
 
 
                     <li style="display:inline-table;width:47%;margin:5px">
                         
-                        <img src="<?php echo base_url().$key['icon'] ?>" style="    width: fit-content;
-    height: 12rem;">
-
-                        <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key['id'].'') ?>" class="item-link item-content" style="padding:15px;    margin-top: -6px;position: inherit;">
-                           <div class="item-avatar"> </div>
-                           <div class="item-col">
-                              <div class="item-title"><?php echo $key['name'] ?></div>
-                           </div>
+                        <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>">
+                        <div class="card" style="font-size: 1.1rem;font-weight: 700;padding: 27px;height: 10rem;text-align: center;border-radius: 13px;background-color: teal;color: white;">
+                           <p style="margin-top:17px"> <?php echo $key['name'] ?></p>
+                        </div>
                         </a>
+                       
                      </li>
 
                      <?php } ?>
