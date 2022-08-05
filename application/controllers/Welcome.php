@@ -10,29 +10,42 @@ class Welcome extends CI_Controller {
 
 
 public function index(){
-	$this->load->view('home');
+  $this->load->view('home');
 }
- 
- public function cal(){
-     $this->load->view('admin/common/calendar/index.html');
- }
+
 public function login(){
-	$this->load->view('login');
+  $this->load->view('login');
+}
+
+
+
+public function content1(){
+  $this->load->view('content1');
+}
+
+public function content2(){
+  $this->load->view('content2');
+}
+
+public function machine_type(){
+  $data['machine_type'] = $this->Model_welcome->get_machine();
+  $this->load->view('machine_type',$data);
 }
 
 public function main(){
-  $data['data'] = $this->Model_welcome->get_data();
-	$this->load->view('main',$data);
+  $id = $this->input->get('id');
+  $data['data'] = $this->Model_welcome->get_data_by_machine($id);
+  $this->load->view('main',$data);
 }
 
 public function detail(){
   $info = $this->input->get('id');
   $data['data'] = $this->Model_welcome->get_data_detail($info);
-	$this->load->view('detail',$data);
+  $this->load->view('detail',$data);
 }
 
 public function signup(){
-	$this->load->view('signup');
+  $this->load->view('signup');
 }
 
 
@@ -68,7 +81,7 @@ public function testing_py(){
   $output = ob_get_clean();
   echo $output;
   }
-	
+  
 
 }
 
