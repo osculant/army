@@ -156,7 +156,7 @@
                         <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key['id'].'') ?>" class="item-link item-content" style="padding:15px;    margin-top: -6px;position: inherit;">
                            <div class="item-avatar"> </div>
                            <div class="item-col">
-                              <div class="item-title"><?php echo $key['name'] ?></div>
+                              <div class="item-title" style="text-align:center;"><?php echo $key['name'] ?></div>
                            </div>
                         </a>
                      </li>
