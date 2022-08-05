@@ -22,6 +22,16 @@
 <link href="<?php echo base_url('assets/for_admin/') ?>public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/for_admin/') ?>public/assets/css/icons.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/for_admin/') ?>public/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="<?php echo base_url('assets/for_admin/') ?>cal/css/bootstrap.min.css" />
+<script src="<?php echo base_url('assets/for_admin/') ?>cal/js/jquery.slim.min.js" type="text/javscript"></script>
+<script src="<?php echo base_url('assets/for_admin/') ?>cal/js/bootstrap.min.js" type="text/javscript"></script>
+<script src="<?php echo base_url('assets/for_admin/') ?>cal/js/moment.min.js" type="text/javscript"></script>
+<link rel="stylesheet" href="<?php echo base_url('assets/for_admin/') ?>cal/css/calendar.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url('assets/for_admin/') ?>cal/css/spinner.css" rel="stylesheet" type="text/css" />
+<script src="<?php echo base_url('assets/for_admin/') ?>cal/js/calendar.js" type="module"></script>
+<script src="<?php echo base_url('assets/for_admin/') ?>cal/js/spinner.js" type="module"></script>
+<script src="<?php echo base_url('assets/for_admin/') ?>cal/js/mockData.js" type="module"></script>
 </head>
 <body class="fixed-left">
 
@@ -66,7 +76,9 @@
                                         <p class=" mb-0 m-t-20 text-muted"></p>
                                     </div>
                                 </div>
-                                
+                                <div class="row">
+                                    <div id="calendar"> drftgyhujikol</div>
+                                </div>
                                 
                             </div>
 
@@ -86,7 +98,23 @@
         </div>
         <!-- END wrapper -->
 
+ <script> 
  
+import {Spinner} from 'spinner.js';
+const Spinner = require('spinner.js');
+import {mockData} from 'mockData.js';
+
+import {Calendar} from 'calendar.js';
+ Calendar = require('calendar.js');
+const mockData = require('mockData.js');
+document.addEventListener("DOMContentLoaded", async ()=>{
+  var cal = Calendar('calendar');
+  var spr = Spinner('calendar'); 
+  await spr.renderSpinner().delay(0);
+  cal.bindData(mockData);
+  cal.render();
+});
+</script>
 
         <script src="<?php echo base_url('assets/for_admin/') ?>public/assets/js/jquery.min.js"></script>
         <script src="<?php echo base_url('assets/for_admin/') ?>public/assets/js/bootstrap.bundle.min.js"></script>

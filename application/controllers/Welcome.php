@@ -12,7 +12,10 @@ class Welcome extends CI_Controller {
 public function index(){
 	$this->load->view('home');
 }
-
+ 
+ public function cal(){
+     $this->load->view('admin/common/calendar/index.html');
+ }
 public function login(){
 	$this->load->view('login');
 }
