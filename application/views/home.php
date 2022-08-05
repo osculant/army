@@ -48,7 +48,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
       <!--script end-->
 </head>
-<body style="background-color: teal">
+<body style="background-color: teal;height:100vh;overflow:hidden">
 
   <div class="container">
 
@@ -78,34 +78,37 @@
 
         </div>
 
-        <div class="row" style="margin-top:20px">
+       <!--  <div class="row" style="margin-top:20px">
            <div class="col-12">
             <center>
               <a class="btn btn-info" href="<?php echo base_url('index.php/welcome/main') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
             </center>
           </div>
-        </div>
+        </div> -->
     
         
-         <div class="row" style="margin-top:135px">
+         <div class="row" >
           
             <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;left: 0;bottom:0">
       
             <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 43%;    position: absolute;right: 0;bottom:0">
-          
+            
+
+
+            <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/main') ?>" style="position: absolute;
+    bottom: 0;background-color: black;
+    ">Continue <i class="fa fa-arrow-circle-right"></i></a>
           </div>
 
 
 
   
-<!-- 
-<a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/main') ?>" style="    position: absolute;
-    bottom: 0;
-    width: 100%;">Continue <i class="fa fa-arrow-circle-right"></i></a>
+
+
         
 
 
- -->
+
   </div>
 
 </body>
