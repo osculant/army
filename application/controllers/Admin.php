@@ -121,33 +121,7 @@ function index(){
         }
 
 
-        // if(isset($_FILES['audio']["name"])){
-
-
-        //       $config['upload_path'] = "./assets/files/";
-        //        $config['allowed_types'] = "mp3";
-        //       $this->load->library('upload', $config);
-
-        //       if (!$this->upload->do_upload('audio') ) {
-        //           // $this->load->view('admin/admin', $error);
-        //           $error = array('error' => $this->upload->display_errors());
-        //           print_r($error);
-        //       } else {
-        //         $data = array('image_metadata' => $this->upload->data());
-        //         // echo  $data['image_metadata']["file_name"];
-        //         $name=$data['image_metadata']["file_name"];
-        //         $path= 'assets/files/'.$name;
-        //         // print_r($data);
-        //         $audio_arr=array(
-                  
-                  
-        //           'audio'   => base_url().$path,
-              
-        //         );
-
-               
-        //     }
-        // } 
+      
 
 
     $arr = array(
@@ -162,6 +136,40 @@ function index(){
     // print_r($arr);
 
     $key = $this->db->insert('links',$arr);
+
+      $last_id = $this->db->insert_id();
+
+      $data['img_url']="";
+  
+      $this->load->library('ciqrcode');
+      $qr_image=rand().'.png';
+
+     
+      $qrtext = base_url()."index.php/welcome/main?id=".$last_id;
+
+      $params['data'] = $qrtext;
+      $params['level'] = 'H';
+      $params['size'] = 8;
+      $params['savename'] =FCPATH."assets/qr_code/".$qr_image;
+      if($this->ciqrcode->generate($params))
+      {
+        $data['img_url']=$qr_image; 
+      }
+
+
+      $qr= array(
+        'qr_code'=> $qr_image,
+      );
+
+      $this->db->where('id',$last_id);
+      $this->db->update('links',$qr); 
+
+
+
+
+
+
+
 
 
     if($key){
