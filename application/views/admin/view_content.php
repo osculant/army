@@ -69,8 +69,9 @@
                                             <th>Name</th>
                                             <th>Video Link</th>
                                             <th>Description</th>
-                                            
+                                            <th>QR Code</th>
                                             <th>Action</th>
+
                                         </thead>
                                         <tbody>
                                            <?php $i = 0; foreach($content as $key){ ?>
@@ -79,6 +80,8 @@
                                                     <td><?php echo $key['name'] ?></td>
                                                     <td><?php echo $key['link']; ?></td>
                                                     <td><?php echo $key['description']; ?></td>
+
+                                                    <td><a href="<?php echo base_url('assets/qr_code/').$key['qr_code']; ?>" download>Download</a></td>
                                                    
                                                     <td>
                                                         

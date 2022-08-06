@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div id="calendar"> drftgyhujikol</div>
+                                    <div id="calendar"> </div>
                                 </div>
                                 
                             </div>

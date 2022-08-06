@@ -145,7 +145,7 @@ function index(){
       $qr_image=rand().'.png';
 
      
-      $qrtext = base_url()."index.php/welcome/main?id=".$last_id;
+      $qrtext = base_url()."index.php/welcome/detail?id=".$last_id;
 
       $params['data'] = $qrtext;
       $params['level'] = 'H';
