@@ -81,7 +81,11 @@
                                                     <td><?php echo $key['link']; ?></td>
                                                     <td><?php echo $key['description']; ?></td>
 
-                                                    <td><a href="<?php echo base_url('assets/qr_code/').$key['qr_code']; ?>" download>Download</a></td>
+                                                    <td>
+                                                        <?php if($key['qr_code']){ ?>
+                                                            <a href="<?php echo base_url('assets/qr_code/').$key['qr_code']; ?>" download>Download</a>
+                                                        <?php } ?>
+                                                    </td>
                                                    
                                                     <td>
                                                         
