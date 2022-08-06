@@ -186,7 +186,7 @@
          <div class="social-media-col pages-list-col">
             <div class="container">
                 
-                <p style="padding-top:15px; color:white;text-align: justify; font-size: 1.2rem;color: yellow;font-family: 'Poppins', sans-serif;">The Solid Waste Management (SWM) Rules of 20161, promulgated in 2016 classifies Defence Establishments as bulk waste generators who are required to process all biodegradable waste within their premises. In the absence of a Cantonment Board at Udhampur, the responsibility for solid waste management rests with the Station Commander Udhampur Military Station.
+                <p style="padding-top:15px; color:white;text-align: justify; font-size: 1.2rem;color: yellow;font-family: 'Poppins', sans-serif;">The Solid Waste Management (SWM) Rules of 2016, promulgated in 2016 classifies Defence Establishments as bulk waste generators who are required to process all biodegradable waste within their premises. In the absence of a Cantonment Board at Udhampur, the responsibility for solid waste management rests with the Station Commander Udhampur Military Station.
                     <br>
 
 
