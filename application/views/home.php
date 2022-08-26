@@ -54,11 +54,11 @@
 
        <div class="row" style="margin-top: 0px;">
 
-          <div class="col-12">
+         <!--  <div class="col-12">
             <img src="<?php echo base_url('assets/sun.png') ?>" style="width: 100%;">
-          </div>
+          </div> -->
 
-          <div class="col-12" style="margin-bottom:-104px;margin-top: 57px;" >
+          <div class="col-12" style="margin-bottom:-104px;margin-top: 150px;" >
             <p style="font-size:1.2rem;text-align: center;color: yellowgreen;font-weight: bold;">DHRUVA ECO-FRIENDLY <br> WASTE DISPOSAL SYS</p>
             <br>
 
@@ -85,9 +85,31 @@
             </center>
           </div>
         </div> -->
+
+        <br>
+
+        <div class="row">
+          <div class="col-md-12">
+              <img src="<?php echo base_url('assets/logo12.jpg') ?>" style="width: -webkit-fill-available;margin-top: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius: 15px;">
+            
+            <br>
+
+            <br>
+
+            <center>
+              <h4 style="color: white;">REDUCE RECYCLE REUSE</h4>
+            </center>
+
+            <br>
+            <center>
+              <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/content2') ?>" style="background-color: black;margin-top: 8px;
+    ">Continue <i class="fa fa-arrow-circle-right"></i></a>
+            </center>
+          </div>
+        </div>
     
         
-         <div class="row" >
+        <!--  <div class="row" >
           
             <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;left: 0;bottom:0">
       
@@ -99,7 +121,7 @@
     bottom: 0;background-color: black;border:none;
     ">Continue <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-
+ -->
 
 
   

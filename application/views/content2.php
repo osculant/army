@@ -208,11 +208,15 @@ video {
   Your browser does not support the video tag.
 </video>
  
-
-
+    <br>
+    <br>
+    <center>
+        <h4 style="color:white">Toward Clean & Green Military Station</h4>
+    </center>
+    <hr style="border:2px solid">
     
     <div style="overflow:scroll;height:39rem" >
-  <p style="padding-top:15px; color:white;text-align: justify; font-size: 1.4rem;color: white;font-family: 'Poppins', sans-serif;">The Solid Waste Management (SWM) Rules of 20161, promulgated in 2016 classifies Defence Establishments as bulk waste generators who are required to process all biodegradable waste within their premises. In the absence of a Cantonment Board at Udhampur, the responsibility for solid waste management rests with the Station Commander Udhampur Military Station.
+  <p style="padding-top:4px; color:white;text-align: justify; font-size: 1.1rem;color: white;font-family: 'Poppins', sans-serif;">The Solid Waste Management (SWM) Rules of 20161, promulgated in 2016 classifies Defence Establishments as bulk waste generators who are required to process all biodegradable waste within their premises. In the absence of a Cantonment Board at Udhampur, the responsibility for solid waste management rests with the Station Commander Udhampur Military Station.
                     <br>
 
 

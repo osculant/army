@@ -117,7 +117,7 @@
                   <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
     font-size: 1.5rem;"></i></p>
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><?php echo $machine_name['name'] ?></div>
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"><?php echo $machine_name['name'] ?><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"></div>
               <!--  <div class="right d-flex">
                   <p><a href="javascript:history.back()" class="btn btn-light btn-sm">
                   
@@ -155,12 +155,12 @@
 <!-- overlay end -->
 
 
-    <img  src="<?php echo base_url('assets/icon9.png') ?>" style="    width: 13rem;position: absolute;top: 220px;opacity: 0.5;left:0">
+  <!--   <img  src="<?php echo base_url('assets/icon9.png') ?>" style="    width: 13rem;position: absolute;top: 220px;opacity: 0.5;left:0">
     <img  src="<?php echo base_url('assets/icon40.png') ?>" style="    width: 13rem;position: absolute;bottom: 220px;opacity: 0.5;right:0">
     
     
     <img  src="<?php echo base_url('assets/icon6.png') ?>" style="    width: 13rem;position: absolute;bottom: 0;opacity: 0.5;left: 28%;right: 50%;">
-
+ -->
       <div class="page-content" style="height:100%">
          <div class="social-media-col pages-list-col">
             <div class="container">

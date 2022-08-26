@@ -163,6 +163,31 @@
   
 }
 
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 2);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+
+
 </style>
       
    </head>
@@ -179,7 +204,7 @@
                   <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
     font-size: 1.5rem;"></i></p>
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"> DEWS <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"></div>
+               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"> A REVOLUTION IN CANTT <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"></div>
              
             </div>
          </div>
@@ -223,8 +248,8 @@
                     <li style="width:100%;margin:5px" class="animate__animated animate__lightSpeedInLeft">
                         
                         <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>">
-                        <div class="card" style="font-size: 1.1rem;font-weight: 700;padding: 27px;height: 10rem;text-align: center;border-radius: 13px;background-color: teal;color: white;">
-                           <p style="margin-top:25px;font-size: 1.4rem;"> <?php echo $key['name'] ?></p>
+                        <div class="card" style="font-size: 1.1rem;font-weight: 700;padding: 27px;height: 10rem;text-align: left;border-radius: 13px;background-image: url('<?php echo base_url('assets/'.$key['image'].'') ?>') ;color: white;    background-size: cover;    text-shadow: 7px 1px 7px black;">
+                           <p style="margin-top:64px;font-size: 1.4rem;text-decoration: overline;"> <?php echo $key['name'] ?></p>
                         </div>
                         </a>
                        
@@ -242,7 +267,7 @@
       
 
 
-      <img class="iconimg" src="<?php echo base_url('assets/icon3.png') ?>" style="position: absolute; bottom: 0;width: 12rem;">
+      <!-- <img class="iconimg" src="<?php echo base_url('assets/icon3.png') ?>" style="position: absolute; bottom: 0;width: 12rem;"> -->
 
 
       </div>   <!-- main div  -->
