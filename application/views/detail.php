@@ -32,13 +32,13 @@
 
 
 
- <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon9.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;top: 220px;opacity: 0.5;left:0">
+ <!-- <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon9.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;top: 220px;opacity: 0.5;left:0">
     <img class="animate__animated animate__bounceInLeft"   src="<?php echo base_url('assets/icon40.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;bottom: 305px;opacity: 0.5;right:0">
     
     
     <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon90.png') ?>" style=" transition: 0.5s ease;   width: 13rem;position: absolute;bottom: 0;opacity: 0.5;left: 28%;right: 50%;">
 
-
+ -->
 
 
       <div class="page-content " >
