@@ -103,7 +103,7 @@
             </div>
             <div class="col-12" style="margin-bottom:-104px;margin-top: 33px;" >
                 <img src="<?php echo base_url('assets/logoimg.png') ?>" style="width: inherit;">
-                <p style="font-size:1.1rem;text-align: center;color: crimson;font-weight: bold;"><span id="arc">  WASTE DISPOSAL SYSTEM</p>
+                <p style="font-size:1.1rem;text-align: center;color: crimson;font-weight: bold;margin-top: -14px;margin-bottom: 23px;"><span id="arc">  WASTE DISPOSAL SYSTEM</p>
             </div>
           </div>
           <div class="row" style="margin-top:50px">
