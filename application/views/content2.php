@@ -173,72 +173,43 @@ video {
    </head>
    <body >
 
-<!-- <div class="lds-ripple" id="loader"><div></div><div></div></div> -->
 
 <div id="main_id" >
-
-     
-        
-<!-- overlay end -->
-
-
-      <div class="page-content1" style="height:100vh;background-color:teal !important">
-         <div class="social-media-col pages-list-col">
+    <div class="page-content1" style="height:100vh;background-color:teal !important">
+        <div class="social-media-col pages-list-col">
             <div class="container">
-                
-                <center><p style="padding-top: 15px;color: white;">
-                    <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"> DEWS <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;">
-                </p></center>
-                
                 <center>
-                <h3 style="padding-top:15px;color: yellow;">INTRODUCTION</h3>
+                    <p style="padding-top: 15px;color: white;">
+                        <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"> DEWS <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;">
+                    </p>
+                </center>    
+                <center>
+                    <h3 style="padding-top:15px;color: yellow;">INTRODUCTION</h3>
                 </center>
-
-                
                 <hr>
-
-
-              <video  controls style="margin-top:-66px">
-  <source src="<?php echo base_url('assets/video.mp4') ?>" type="video/mp4">
-  
-  Your browser does not support the video tag.
-</video>
- 
-    <br>
-    <br>
-    <center>
-        <h4 style="color:white">Toward Clean & Green Military Station</h4>
-    </center>
-    <hr style="border:2px solid">
-    
-    <div style="overflow:scroll;height:39rem" >
-  <p style="padding-top:4px; color:white;text-align: justify; font-size: 1.1rem;color: white;font-family: 'Poppins', sans-serif;">The Solid Waste Management (SWM) Rules of 20161, promulgated in 2016 classifies Defence Establishments as bulk waste generators who are required to process all biodegradable waste within their premises. In the absence of a Cantonment Board at Udhampur, the responsibility for solid waste management rests with the Station Commander Udhampur Military Station.
+                <video  controls style="margin-top:-66px">
+                    <source src="<?php echo base_url('assets/video.mp4') ?>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <center>
+                    <h4 style="color:white">Toward Clean & Green Military Station</h4>
+                </center>
+                <hr style="border:2px solid">
+                
+                <div style="overflow:scroll;height:36rem" >
+                    <p style="padding-top:4px; color:white;text-align: justify; font-size: 1%rem;color: white;font-family: 'Poppins', sans-serif;">The Solid Waste Management (SWM) Rules of 20161, promulgated in 2016 classifies Defence Establishments as bulk waste generators who are required to process all biodegradable waste within their premises. In the absence of a Cantonment Board at Udhampur, the responsibility for solid waste management rests with the Station Commander Udhampur Military Station.
                     <br>
-
-
                     All waste needs to be managed with appropriate technologies and procedures to keep the areas clean, prevent pollution and protect the environment. It should also be ensured that in addition to minimising the costs for transportation, handling and processing are the carbon footprint of waste management is kept to the minimum
-                </p>
-
+                    </p>
+                </div>
+                
+                <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/machine_type') ?>" style="position: fixed;bottom: 0;background-color: black;border:none;left: 0;">Continue <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
 </div>
-                <!-- <a href="<?php echo base_url('index.php/welcome/machine_type') ?>" class="btn btn-info">Continue</a> -->
-
-            <!-- <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;left: 0;bottom:0"> -->
-
-<a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/machine_type') ?>" style="position: absolute;
-    bottom: 0;background-color: black;border:none;left: 0;
-    ">Continue <i class="fa fa-arrow-circle-right"></i></a>
-
-            </div>
-            </div>
-         </div>
-      </div>
       
 
-
-     <!--  <img class="iconimg" src="<?php echo base_url('assets/icon3.png') ?>" style="position: absolute; bottom: 0;width: 12rem;">
- -->
-
-      </div>   <!-- main div  -->
                    
        
        <script src="<?php echo base_url('assets/attachment') ?>/jquery-3.5.1.min.js.download"></script>
