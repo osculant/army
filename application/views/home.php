@@ -24,7 +24,7 @@
      */
 
         body{
-          height: 100%;
+          height: 100vh;
         }
 
 
@@ -61,10 +61,10 @@
         
         .demo-wrap {
   position: unset;
-  height: 100%;
+  height: 100vh;
 }
 
-.demo-wrap:before {
+body:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -79,10 +79,10 @@
   background-size: cover;
 }
 
-.demo-content {
+/*.demo-content {
   position: relative;
 }
-
+*/
 
 .rr{
   font-size: 1.8rem;
