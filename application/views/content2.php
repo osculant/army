@@ -20,11 +20,7 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
-      <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>normalize.css">
-      <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>demo.css">
-      <link rel="stylesheet" type="text/css" href="<?php echo base_url('asets/loader/') ?>component.css">
-      <script type="text/javascript" async="" src="<?php echo base_url('asets/loader/') ?>ga.js.download"></script>
-      <script src="<?php echo base_url('asets/loader/') ?>snap.svg-min.js.download"></script>
+    
 
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
