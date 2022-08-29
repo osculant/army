@@ -6,7 +6,7 @@
 
       <style>
          
-         @media(max-height: 1024px){
+/*         @media(max-height: 1024px){
 
       body{
         height: 100vh;
@@ -21,7 +21,11 @@
             height: 130vh;
           }
         }
-     
+     */
+
+        body{
+          height: 100%;
+        }
 
 
       </style>
@@ -56,8 +60,8 @@
       <style type="text/css">
         
         .demo-wrap {
-  position: relative;
-  height: 100vh;
+  /*position: relative;*/
+  height: 100%;
 }
 
 .demo-wrap:before {
