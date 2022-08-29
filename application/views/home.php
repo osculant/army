@@ -6,7 +6,7 @@
 
       <style>
          
-/*         @media(max-height: 1024px){
+         @media(max-height: 1024px){
 
       body{
         height: 100vh;
@@ -21,11 +21,7 @@
             height: 130vh;
           }
         }
-     */
-
-        body{
-          height: 100vh;
-        }
+     
 
 
       </style>
@@ -60,11 +56,11 @@
       <style type="text/css">
         
         .demo-wrap {
-  position: unset;
+  /*position: relative;*/
   height: 100vh;
 }
 
-body:before {
+.demo-wrap:before {
   content: ' ';
   display: block;
   position: absolute;
@@ -79,10 +75,10 @@ body:before {
   background-size: cover;
 }
 
-/*.demo-content {
+.demo-content {
   position: relative;
 }
-*/
+
 
 .rr{
   font-size: 1.8rem;
@@ -94,7 +90,7 @@ body:before {
 
       </style>
 </head>
-<!-- <body style=";height:100vh;overflow:hidden"> -->
+<body style="height:100vh;overflow:hidden">
 <!-- <body style="background-image: url('<?php echo base_url('assets/bg.jpg') ?>');">   -->
 
 
