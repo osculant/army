@@ -56,7 +56,7 @@
       <style type="text/css">
         
         .demo-wrap {
-  /*position: relative;*/
+  position: relative;
   height: 100vh;
 }
 
@@ -95,116 +95,30 @@
 
 
     <div class="demo-wrap">
-  <div class="demo-content">
-   
-  
- 
-  <div class="container">
-
-       <div class="row" style="margin-top: 0px;">
-
-         <!--  <div class="col-12">
-            <img src="<?php echo base_url('assets/sun.png') ?>" style="width: 100%;">
-          </div> -->
-
+      <div class="demo-content">
+        <div class="container">
+          <div class="row" style="margin-top: 0px;">
             <div class="col-md-12" style="margin-top:19px">
-              
               <center><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 30%;"></center>
             </div>
-          <div class="col-12" style="margin-bottom:-104px;margin-top: 33px;" >
-            <img src="<?php echo base_url('assets/logoimg.png') ?>" style="width: inherit;">
-            <p style="font-size:1.1rem;text-align: center;color: crimson;font-weight: bold;"><span id="arc">  WASTE DISPOSAL SYSTEM</p>
-            <br>
-
-
+            <div class="col-12" style="margin-bottom:-104px;margin-top: 33px;" >
+                <img src="<?php echo base_url('assets/logoimg.png') ?>" style="width: inherit;">
+                <p style="font-size:1.1rem;text-align: center;color: crimson;font-weight: bold;"><span id="arc">  WASTE DISPOSAL SYSTEM</p>
+            </div>
           </div>
-
-         <!--  <div class="col-3"  >
-            <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
-          </div>
-
-
-          <div class="col-3 offset-6"  >
-            <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 100%;">
-          </div>
- -->
-         
-
-        </div>
-
-       <!--  <div class="row" style="margin-top:20px">
-           <div class="col-12">
-            <center>
-              <a class="btn btn-info" href="<?php echo base_url('index.php/welcome/main') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
-            </center>
-          </div>
-        </div> -->
-
-        <br>
-
-        <!-- <div class="row" style="margin-top:60px">
-
-          <div class="col-md-12 rr" style="text-align: left;margin-top: 25px;">
-            
-            <p><i>RECYCLE</i></p> 
-          </div>
-          
-          <div class="col-md-12 rr" style="text-align:center;margin-top: 25px;">
-            
-            <p><i>REDUCE</i></p> 
-          </div>
-          
-          <div class="col-md-12 rr" style="text-align:right;margin-top: 25px;">
-                <p><i>REUSE</i></p>
-          
-          </div>
-
-
-        </div> -->
-
-        <div class="row" style="margin-top:50px">
-          <div class="col-md-12">
-           <center>   <img src="<?php echo base_url('assets/middellogo.png') ?>" style="width: max-content;;margin-top: 25px;"></center>
-            
-        
-            
-            <center>
-              <a class="btn btn-light " href="<?php echo base_url('index.php/welcome/content2') ?>" style="background-color: #1ebb28;margin-top: 8px;    border-radius: 23px;font-size: 1.5rem;margin-top: 45px;
-    ">Continue <i class="fa fa-arrow-circle-right"></i></a>
-            </center>
+          <div class="row" style="margin-top:50px">
+              <div class="col-md-12">
+                  <center>   
+                    <img src="<?php echo base_url('assets/middellogo.png') ?>" style="width: max-content;;margin-top: 25px;">
+                  </center>
+                  <center>
+                      <a class="btn btn-light " href="<?php echo base_url('index.php/welcome/content2') ?>" style="background-color: #1ebb28;margin-top: 8px;    border-radius: 23px;font-size: 1.5rem;margin-top: 45px;">Continue <i class="fa fa-arrow-circle-right"></i></a>
+                  </center>
+              </div>
           </div>
         </div>
-    
-        
-        <!--  <div class="row" >
-          
-            <img src="<?php echo base_url('assets/treeleft.png') ?>" style="height: 43%;    position: absolute;left: 0;bottom:0">
-      
-            <img src="<?php echo base_url('assets/treeright.png') ?>" style="height: 43%;    position: absolute;right: 0;bottom:0">
-            
-
-
-            <a class="btn btn-info btn-block" href="<?php echo base_url('index.php/welcome/content2') ?>" style="position: absolute;
-    bottom: 0;background-color: black;border:none;
-    ">Continue <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
- -->
-
-
-  
-
-
-        
-
-
-
-  </div>
-
-
-
-
-  </div>
-</div>
+      </div>
+    </div>
 
 
 </body>
