@@ -64,20 +64,22 @@
   content: ' ';
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background-image: url('<?php echo base_url('assets/bg.jpg') ?>');
+  left: 15%;
+  top: 7%;
+  width: 85%;
+  height: 93%;
+  opacity: 0.9;
+  /*background-image: url('<?php echo base_url('assets/bg.jpg') ?>');*/
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+     border-top-left-radius: 71px; 
+         background-color: #069a6d;
 }
 
-.demo-content {
+/*.demo-content {
   position: relative;
-}
+}*/
 
 
 .rr{
@@ -88,6 +90,47 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.continuebtn{
+      background-color: white;
+    margin-top: 8px;
+    border-radius: 37px;
+    font-size: 1.5rem;
+    margin-top: 45px;
+    position: absolute;
+    bottom: 188px;
+    height: 4rem;
+    padding-top: 10px;
+    width: 15rem;
+}
+
+.blank_space{
+      position: absolute;
+    bottom: 0px;
+    width: 7rem;
+    height: 195px;
+    background-color: white;
+}
+
+.arc{
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (min-width:200px) and (max-width: 400px){
+  .logoimage{
+    width: 30%;
+    margin-top: 36%;
+  }
+}
+
+@media only screen and (min-width: 400px) and  (max-width: 768px)  {
+  .logoimage{
+    width: 30%;
+    margin-top: 60%;
+  }
+}
       </style>
 </head>
 <body style="height:100vh;overflow:hidden">
@@ -98,27 +141,40 @@
       <div class="demo-content">
         <div class="container">
           <div class="row" style="margin-top: 0px;">
-            <div class="col-md-12" style="margin-top:19px">
-              <center><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 30%;"></center>
-            </div>
-            <div class="col-12" style="margin-bottom:-104px;margin-top: 33px;" >
+             <div class="col-md-12" style="margin-top:19px">
+              <center><img class="logoimage" src="<?php echo base_url('assets/logo.png') ?>" ></center>
+
+              <center>
+                <h4 style="color: white;font-weight: bold;margin-top: 25px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
+                <p><span class="arc">  WASTE DISPOSAL SYSTEM</span></p>
+              </center>
+            </div> 
+           <!--  <div class="col-12" style="margin-bottom:-104px;margin-top: 33px;" >
                 <img src="<?php echo base_url('assets/logoimg.png') ?>" style="width: inherit;">
                 <p style="font-size:1.1rem;text-align: center;color: crimson;font-weight: bold;margin-top: -14px;margin-bottom: 23px;"><span id="arc">  WASTE DISPOSAL SYSTEM</p>
-            </div>
+            </div> -->
           </div>
-          <div class="row" style="margin-top:50px">
+         <!--  <div class="row" style="margin-top:50px">
               <div class="col-md-12">
                   <center>   
                     <img src="<?php echo base_url('assets/middellogo.png') ?>" style="width: max-content;;margin-top: 25px;">
                   </center>
-                  <center>
-                      <a class="btn btn-light " href="<?php echo base_url('index.php/welcome/content2') ?>" style="background-color: #1ebb28;margin-top: 8px;    border-radius: 23px;font-size: 1.5rem;margin-top: 45px;">Continue <i class="fa fa-arrow-circle-right"></i></a>
-                  </center>
+                 
               </div>
           </div>
+ -->
+
+            
+          
+                      <a class="btn btn-light continuebtn" href="<?php echo base_url('index.php/welcome/content2') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
+               
+                      <div class="blank_space"></div>
+
+         
         </div>
       </div>
     </div>
+
 
 
 </body>
