@@ -164,7 +164,8 @@
           </div>
  -->
 
-            
+            <img src="<?php echo base_url('assets/bonsai.png') ?>" style="position: absolute; right: 0px;bottom: 0px;width: 36%;
+    height: 24%;" >
           
                       <a class="btn btn-light continuebtn" href="<?php echo base_url('index.php/welcome/content2') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
                
