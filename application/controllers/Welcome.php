@@ -13,6 +13,10 @@ public function index(){
   $this->load->view('home');
 }
 
+public function ui2(){
+  $this->load->view('home1');
+}
+
 public function login(){
   $this->load->view('login');
 }
