@@ -27,7 +27,28 @@
 
 
       /*------------overlay for header--------------*/
+
+      .circle{
+        width: 16rem;
+    height: 16rem;
+    background: #77D6B4;
+    position: absolute;
+    right: -48px;
+    border-radius: 50%;
+    top: -39px;
+      }
+
+         .circle2{
+          width: 11rem;
+    height: 11rem;
+    background: #64ab92;
+    position: absolute;
+    right: -23px;
+    border-radius: 50%;
+    bottom: -63px;
+      }
       .overlay {
+            opacity: 0.97;
           height: 100%;
           width: 0;
           position: fixed;
@@ -44,7 +65,7 @@
 
         .overlay-content {
              position: relative;
-            top: 9%;
+            top: 22%;
             width: 100%;
             text-align: center;
         }
@@ -57,9 +78,9 @@
             color: white;
             display: block;
             transition: 0.3s;
-            border: 1px solid white;
+            /*border: 1px solid white;*/
             margin: 10px;
-            border-radius: 6px;
+            /*border-radius: 6px;*/
             text-transform: uppercase;
             font-weight: 200;
             box-shadow: 0 0 0px 0 rgb(0 0 0 / 10%), 0 0px 8px 0 rgb(0 0 0 / 19%);
@@ -79,7 +100,7 @@
           position: absolute;
             top: 21px;
             font-size: 20px;
-            left: 14px;
+            right: 14px;
         }
 
       /*------------overlay for header end-----------*/
@@ -113,18 +134,21 @@
       <div class="main-wrapper">
           <div class="navbar two-action no-hairline" style="background-color: black;">
             <div class="navbar-inner d-flex align-items-center">
-                <div class="left d-flex">
-                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;
-    font-size: 1.5rem;"></i></p>
+               
+               <div class="sliding custom-title" style="text-align: left;margin-top: 2px;">
+                   
+
+
+                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h4>
+                <p><span class="arc" style="color:#9FE0CE;text-align:left;">  WASTE DISPOSAL SYSTEM</span></p>
+             
+
                </div>
-               <div class="sliding custom-title" style="text-align: center;margin-top: 2px;"><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"><?php echo $machine_name['name'] ?><img src="<?php echo base_url('assets/logo.png') ?>" style="width: 2.5rem;"></div>
-              <!--  <div class="right d-flex">
-                  <p><a href="javascript:history.back()" class="btn btn-light btn-sm">
+               <div class="right d-flex">
                   
-                     <img src="<?php echo base_url('assets/5626618.png') ?>" style="width: 25px;margin-top: 15px;">
-                     BACK
-                  </a></p>
-               </div> -->
+                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;    margin-top: 16px;margin-right: 10px;font-size: 1.5rem;"></i></p>
+               
+               </div>
             </div>
          </div>
       </div>
@@ -133,7 +157,9 @@
       <!-- header overlay -->
 
 <div id="myNav" class="overlay">
-  <button class="btn btn-link closebtn" style="background-color: transparent;" onclick="closeNav()"><i class="fa fa-arrow-left"></i></button>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+  <button class="btn btn-link closebtn" style="background-color: transparent;" onclick="closeNav()"><i class="fa fa-close"></i></button>
   <div class="overlay-content">
   <!-- <hr style="margin-top: 0rem;"> -->
 
@@ -224,7 +250,7 @@
   
 
     function openNav() {
-  document.getElementById("myNav").style.width = "74%";
+  document.getElementById("myNav").style.width = "100%";
   
 
 }

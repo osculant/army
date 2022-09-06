@@ -40,6 +40,10 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Volkhov&display=swap" rel="stylesheet">
       <!--links end-->
 
       <!--script-->
@@ -54,6 +58,90 @@
       <!--script end-->
 
       <style type="text/css">
+
+
+
+      /*------------overlay for header--------------*/
+
+      .circle{
+        width: 16rem;
+    height: 16rem;
+    background: #77D6B4;
+    position: absolute;
+    right: -48px;
+    border-radius: 50%;
+    top: -39px;
+      }
+
+
+       .circle2{
+          width: 11rem;
+    height: 11rem;
+    background: #64ab92;
+    position: absolute;
+    right: -23px;
+    border-radius: 50%;
+    bottom: -63px;
+      }
+      .overlay {
+            opacity: 0.97;
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 100;
+          top: 0;
+          left: 0;
+          background-color: black;
+          
+          overflow-x: hidden;
+          transition: 0.5s;
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              /* border-top: 6px solid brown;*/
+        }
+
+        .overlay-content {
+             position: relative;
+            top: 22%;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            /*border: 1px solid white;*/
+            margin: 10px;
+            /*border-radius: 6px;*/
+            text-transform: uppercase;
+            font-weight: 200;
+            box-shadow: 0 0 0px 0 rgb(0 0 0 / 10%), 0 0px 8px 0 rgb(0 0 0 / 19%);
+            margin-top: 4px;
+            text-align: initial;
+            
+            
+        }
+
+
+
+        .overlay a:hover, .overlay a:focus {
+          color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+          position: absolute;
+            top: 21px;
+            font-size: 20px;
+            right: 14px;
+        }
+
+      /*------------overlay for header end-----------*/
+
+
         
         .demo-wrap {
   position: relative;
@@ -196,8 +284,8 @@
 
 .card_image{
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   margin-top: 6%;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
@@ -215,17 +303,65 @@
     <div class="demo-wrap">
       <div class="demo-content">
         <div class="container">
-          <div class="row" style="margin-top: 0px;">
+          <!-- <div class="row" style="margin-top: 0px;">
               <div class="col-md-12" style="margin-top:0px">
-              <!-- <center><img class="logoimage" src="<?php echo base_url('assets/logo.png') ?>" ></center> -->
 
               <center>
-                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 85px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
+                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
                 <p><span class="arc" style="color:#9FE0CE">  WASTE DISPOSAL SYSTEM</span></p>
               </center>
             </div> 
            
-          </div>
+          </div> -->
+
+           <div class="main-wrapper">
+          <div class="navbar two-action no-hairline" style="background-color: black;">
+            <div class="navbar-inner d-flex align-items-center">
+               
+               <div class="sliding custom-title" style="text-align: left;margin-top: 2px;">
+                   
+
+
+                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h4>
+                <p><span class="arc" style="color:#9FE0CE;text-align:left;">  WASTE DISPOSAL SYSTEM</span></p>
+             
+
+               </div>
+               <div class="right d-flex">
+                  
+                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;margin-top: 16px;margin-left: 49px;font-size: 1.5rem;"></i></p>
+               
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- header overlay -->
+
+<div id="myNav" class="overlay">
+    <div class="circle"></div>
+    <div class="circle2"></div>
+  <button class="btn btn-link closebtn" style="background-color: transparent;" onclick="closeNav()"><i class="fa fa-close"></i></button>
+  <div class="overlay-content">
+  <!-- <hr style="margin-top: 0rem;"> -->
+
+    
+    <a href="<?php echo base_url('index.php') ?>">Home</a>
+    <a href="<?php echo base_url('index.php/contact_us') ?>">Contact US</a>
+    <a href="<?php echo base_url('index.php/about_us') ?>">About Us</a>
+    <!-- <a href="https://www.tripleodiagnostics.com">Visit Our Website</a> -->
+
+    <!-- <a href="<?php echo base_url('index.php/login/logout') ?>">Logout</a> -->
+    
+    
+  </div>
+   
+  </div>
+
+
+</div>
+<!-- overlay end -->
 
           <div class="container"  style="display:-webkit-inline-box;overflow-x: scroll;margin-top: 50px;">
             
@@ -233,7 +369,7 @@
             <?php foreach($machine_type as $key){ ?>
                 
                 
-                <div class="card" style="height:31rem;width:17rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;">
+                <div class="card" style="height:28rem;width:14rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;">
                         <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>">
                     
                   <center>
@@ -243,9 +379,9 @@
                   </center>
 
 
-                  <center>
-                   <p style="color:white;text-transform: uppercase;margin-top: 45px;font-size: 1.5rem;font-weight: bold;"> <?php echo $key['name'] ?></p>
-                  </center>
+                  <center><p style="margin-top: 35px;margin-left:0px;color: yellow;">*****</p></center>
+                   <p style="text-align: left;color:white;text-transform: uppercase;font-size: 1.2rem;font-weight: bold;font-family: 'Volkhov', serif;margin-left:10px"> <?php echo $key['name'] ?></p>
+                  
                 </a>
                 </div>
 
@@ -266,6 +402,17 @@
 
 </body>
 <script type="text/javascript">
+
+   function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  
+
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+
+}
 
 window.onload = function(){  
     
