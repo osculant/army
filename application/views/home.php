@@ -98,13 +98,13 @@
     border-radius: 37px;
     font-size: 1.5rem;
     margin-top: 45px;
-    position: absolute;
-    bottom: 89px;
+    /*position: absolute;*/
+    /*bottom: 89px;*/
     height: 4rem;
     padding-top: 10px;
     width: 15rem;
-    left: 21%;
-        right: 50%;
+    /*left: 21%;*/
+        /*right: 50%;*/
 }
 
 .blank_space{
@@ -154,7 +154,7 @@
               <!-- <center><img class="logoimage" src="<?php echo base_url('assets/logo.png') ?>" ></center> -->
 
               <center>
-                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 21px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
+                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 25px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
                 <p><span class="arc" style="color:#9FE0CE">  WASTE DISPOSAL SYSTEM</span></p>
               </center>
             </div> 
@@ -162,7 +162,7 @@
 
           <div class="row">
 
-            <div class="col-md-12" style="">
+            <div class="col-md-12" style="margin-top: 16%;">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -187,12 +187,18 @@
             </div>
 
           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+               <center> <a class="btn btn-light continuebtn" href="<?php echo base_url('index.php/welcome/machine_type') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a></center>
+            </div>
+          </div>
       
 <!-- 
             <img src="<?php echo base_url('assets/bonsai.png') ?>" style="position: absolute; right: 0px;bottom: 0px;width: 36%;
     height: 24%;" > -->
           
-                      <a class="btn btn-light continuebtn" href="<?php echo base_url('index.php/welcome/machine_type') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
+                    
                
                       
          
