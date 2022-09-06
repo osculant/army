@@ -99,7 +99,7 @@
     font-size: 1.5rem;
     margin-top: 45px;
     position: absolute;
-    bottom: 188px;
+    bottom: 89px;
     height: 4rem;
     padding-top: 10px;
     width: 15rem;
@@ -138,7 +138,7 @@
 
 .d-block{
   height: 22rem !important;
-    border-radius: 50%;
+    border-radius: 10%;
 }
       </style>
 </head>
@@ -154,13 +154,15 @@
               <!-- <center><img class="logoimage" src="<?php echo base_url('assets/logo.png') ?>" ></center> -->
 
               <center>
-                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 122px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
+                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 21px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
                 <p><span class="arc" style="color:#9FE0CE">  WASTE DISPOSAL SYSTEM</span></p>
               </center>
             </div> 
-          
+          </div>
 
-            <div class="col-md-12" style="padding-top:50px">
+          <div class="row">
+
+            <div class="col-md-12" style="">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
