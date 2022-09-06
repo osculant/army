@@ -5,8 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
-      <title>Demo</title>
-      <link rel="shortcut icon" type="image/x-icon" href="https://inspirestory.co.in/amazing-fact/assets/img/favicon.png">
+      <title>Detail</title>
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/bootstrap.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/fontawesome.min.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/all.min.css">
@@ -14,7 +13,13 @@
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/circle.css">
       <link rel="stylesheet" href="<?php echo base_url('assets/attachment') ?>/style.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+<style type="text/css">
+   
+   body {
+  background-color:black;
+  color: #94DC93;
+}
+</style>
    </head>
    <body style="height:100vh">
       <div class="main-wrapper">
@@ -32,13 +37,7 @@
 
 
 
- <!-- <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon9.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;top: 220px;opacity: 0.5;left:0">
-    <img class="animate__animated animate__bounceInLeft"   src="<?php echo base_url('assets/icon40.png') ?>" style="  transition: 0.5s ease;  width: 7rem;position: absolute;bottom: 305px;opacity: 0.5;right:0">
-    
-    
-    <img  class="animate__animated animate__bounceInLeft"  src="<?php echo base_url('assets/icon90.png') ?>" style=" transition: 0.5s ease;   width: 13rem;position: absolute;bottom: 0;opacity: 0.5;left: 28%;right: 50%;">
 
- -->
 
 
       <div class="page-content " >

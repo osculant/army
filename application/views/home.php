@@ -2,11 +2,30 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>ORASCAN</title>
+  <title>DEWS</title>
 
-      
+      <style>
+         
+         @media(max-height: 1024px){
+
+      body{
+        height: 100vh;
+      }
+
+    }
+         
+        
+
+        @media(max-height: 700px){
+          body{
+            height: 130vh;
+          }
+        }
      
-     <!--links-->
+
+
+      </style>
+      <!--links-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -16,6 +35,11 @@
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
       <!--links end-->
 
       <!--script-->
@@ -28,46 +52,151 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
       <!--script end-->
+
+      <style type="text/css">
+        
+        .demo-wrap {
+  position: relative;
+  height: 100vh;
+}
+
+.demo-wrap:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  /*left: 15%;*/
+  /*top: 7%;*/
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  /*background-image: url('<?php echo base_url('assets/bg.jpg') ?>');*/
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+     /*border-top-left-radius: 71px; */
+         /*background-color: #069a6d;*/
+         /*background: linear-gradient(to bottom, #1fcb42 0%, #e8f3d8 100%);*/
+         background-color: black;
+}
+
+/*.demo-content {
+  position: relative;
+}*/
+
+
+.rr{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: green;
+    /*text-shadow: 2px 0px 2px black;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.continuebtn{
+      background-color: white;
+    margin-top: 8px;
+    border-radius: 37px;
+    font-size: 1.5rem;
+    margin-top: 45px;
+    position: absolute;
+    bottom: 188px;
+    height: 4rem;
+    padding-top: 10px;
+    width: 15rem;
+    left: 21%;
+        right: 50%;
+}
+
+.blank_space{
+      position: absolute;
+    bottom: 0px;
+    width: 7rem;
+    height: 195px;
+    background-color: white;
+}
+
+.arc{
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (min-width:200px) and (max-width: 400px){
+  .logoimage{
+    width: 30%;
+    /*margin-top: 36%;*/
+  }
+}
+
+@media only screen and (min-width: 400px) and  (max-width: 768px)  {
+  .logoimage{
+    width: 30%;
+    /*margin-top: 60%;*/
+  }
+}
+
+.d-block{
+  height: 22rem !important;
+    border-radius: 50%;
+}
+      </style>
 </head>
-<body style="    background: linear-gradient(to bottom, #1fcb42 0%, #e8f3d8 100%);height: 100vh;overflow-x: hidden;">
+<body style="height:100vh;overflow:hidden">
+<!-- <body style="background-image: url('<?php echo base_url('assets/bg.jpg') ?>');">   -->
 
-  <div class="container" >
-    
-    <div class="row d-flex justify-content-center" style="margin-top: 28%;">
-      <div class="first">
-        <img src="<?php echo base_url('assets/logo.png') ?>" style="width: 87px;">
+
+    <div class="demo-wrap">
+      <div class="demo-content">
+        <div class="container">
+          <div class="row" style="margin-top: 0px;">
+             <div class="col-md-12" style="margin-top:0px">
+              <!-- <center><img class="logoimage" src="<?php echo base_url('assets/logo.png') ?>" ></center> -->
+
+              <center>
+                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 122px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
+                <p><span class="arc" style="color:#9FE0CE">  WASTE DISPOSAL SYSTEM</span></p>
+              </center>
+            </div> 
+          
+
+            <div class="col-md-12" style="padding-top:50px">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/Picture5.jpg') ?>" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/Picture4.jpg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/Picture3.jpg') ?>" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+      
+<!-- 
+            <img src="<?php echo base_url('assets/bonsai.png') ?>" style="position: absolute; right: 0px;bottom: 0px;width: 36%;
+    height: 24%;" > -->
+          
+                      <a class="btn btn-light continuebtn" href="<?php echo base_url('index.php/welcome/machine_type') ?>" >Continue <i class="fa fa-arrow-circle-right"></i></a>
+               
+                      
+         
+        </div>
       </div>
     </div>
-
-
-    <div class="row" style="">
-      <div class="col-12">
-        <div class="tag">
-          <h4 style="color: white; text-align: center;text-shadow: 2px 2px 4px black;">DHRUVA ECO-FRIENDLY</h4>
-          <p style="color: white; text-align: center;text-shadow: 2px 2px 4px black;">WASTE DISPOSAL SYSTEM</p>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <div class="cover_image">
-          <center><img src="<?php echo base_url('assets/middle.png') ?>" style="width: 21rem;margin-top: 22px;"></center>
-        </div>
-      </div>
-
-
-    
-      <div class="col-12">
-        <div class="buttons">
-          <a href="<?php echo base_url('index.php/welcome/content2') ?>"><button class="btn btn-info" style="background-color: transparent;width: -webkit-fill-available;margin-top: 50px;color: #17a2b8;border:2px solid #17a2b8 ;border-radius: 15px;margin-bottom: 30px;">Continue <i class="fa fa-arrow-circle-right"></i></button></a>
-        </div>
-      </div>
-
-    </div>
-  
-  
-  </div>
-
-
 
 
 

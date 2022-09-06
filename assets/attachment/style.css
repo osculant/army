@@ -5450,7 +5450,7 @@ ul li span.trash-icon {
 }
 .social-media-col .list li .item-content {
 	border-radius: 12px;
-	background-color:black !important;
+	background-color:#94DC93 !important;
 	font-size: 14px;
 	min-height: 7rem;
     max-height: 7rem;
@@ -6037,10 +6037,7 @@ i.fa.fa-share-alt {
 .material-icons{
     padding: 6px!important;
 }
-body {
-  background-color:#EFEFEF;
-  color: black;
-}
+
 
 .dark-mode {
   background-color: black;
@@ -6096,9 +6093,9 @@ span.copied {
 .dark-mode span#hide_copied {
     background: #40a7ff !important;
 }
-.page-content {
+/*.page-content {
     background: #EFEFEF!important;
-}
+}*/
 .sdkvjskj{
     position: absolute;
     top: -42px;
