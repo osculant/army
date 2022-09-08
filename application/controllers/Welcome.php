@@ -33,6 +33,7 @@ public function content2(){
 
 public function machine_type(){
   $data['machine_type'] = $this->Model_welcome->get_machine();
+  $data['data'] = $this->Model_welcome->get_machine_data();
   $this->load->view('machine_type',$data);
 }
 

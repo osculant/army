@@ -149,7 +149,7 @@
 }
 
 .demo-wrap:before {
-  content: ' ';
+  /*content: ' ';*/
   display: block;
   position: absolute;
   /*left: 15%;*/
@@ -284,13 +284,30 @@
 
 .card_image{
   border-radius: 50%;
-  width: 13rem;
-  height: 13rem;
+  width: 5rem;
+  height: 5rem;
   margin-top: 6%;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
+.sub_item_card{
+      border-bottom-left-radius: 136px;
+    border-bottom-right-radius: 136px;
+    margin-top: 20px;
+    min-height: 285px;
+    max-height: 285px;
+    position: absolute;
+    bottom: 0;
+    overflow: auto;
+    width: 14rem;
 
+}
+
+ .navigation1{
+         margin-left: 32px;
+         font-size: 0.5rem;
+         color: white;
+        }
       </style>
 </head>
 <body style="height:100vh;overflow:hidden;background-color:black">
@@ -303,16 +320,7 @@
     <div class="demo-wrap">
       <div class="demo-content">
         <div class="container">
-          <!-- <div class="row" style="margin-top: 0px;">
-              <div class="col-md-12" style="margin-top:0px">
-
-              <center>
-                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
-                <p><span class="arc" style="color:#9FE0CE">  WASTE DISPOSAL SYSTEM</span></p>
-              </center>
-            </div> 
-           
-          </div> -->
+         
 
            <div class="main-wrapper">
           <div class="navbar two-action no-hairline" style="background-color: black;">
@@ -322,14 +330,14 @@
                    
 
 
-                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h4>
+                <h5 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h5>
                 <p><span class="arc" style="color:#9FE0CE;text-align:left;">  WASTE DISPOSAL SYSTEM</span></p>
              
 
                </div>
                <div class="right d-flex">
                   
-                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;margin-top: 16px;margin-left: 49px;font-size: 1.5rem;"></i></p>
+                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;margin-top: 16px;margin-left: 77px;font-size: 1.5rem;"></i></p>
                
                </div>
             </div>
@@ -363,26 +371,49 @@
 </div>
 <!-- overlay end -->
 
+
+         <div class="navigation1">
+
+            <p>HOME / CATEGORY</p>
+      
+         </div>
+
           <div class="container"  style="display:-webkit-inline-box;overflow-x: scroll;margin-top: 50px;">
             
 
             <?php foreach($machine_type as $key){ ?>
                 
                 
-                <div class="card" style="height:28rem;width:14rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;">
-                        <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>">
+                <div class="card" style="height:30rem;width:14rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;position: relative;">
+                      <!--   <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>"> -->
                     
                   <center>
                     <div class="image">
                       <img class="card_image" src="<?php echo base_url('assets/'.$key['image'].'') ?>" >
                     </div>
                   </center>
+                   <p data-toggle="collapse" href="#multiCollapseExample1<?php echo $key['id'] ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="text-align: center;color:white;text-transform: uppercase;font-size: 1rem;font-weight:700;font-family: 'Volkhov', serif;margin-top:10px"> <?php echo $key['name'] ?></p>
 
+                   <div class="collapse multi-collapse" id="multiCollapseExample1<?php echo $key['id'] ?>">
+                    <div class="card card-body sub_item_card">
+                     
+                      <?php foreach($data as $key2){  
 
-                  <center><p style="margin-top: 35px;margin-left:0px;color: yellow;">*****</p></center>
-                   <p style="text-align: left;color:white;text-transform: uppercase;font-size: 1.2rem;font-weight: bold;font-family: 'Volkhov', serif;margin-left:10px"> <?php echo $key['name'] ?></p>
-                  
-                </a>
+                        if($key['id'] == $key2['machine_type']){ ?>
+                         <div class="card" style="border-radius: 55px;padding: 10px;text-align: center;margin: 5px;box-shadow: 0px 1px 8px #8ad08c;color: black;text-decoration: none;">
+                           <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key2['id'].'') ?>" class="item-link item-content" style="padding:15px;    margin-top: -6px;position: inherit;color:black;text-decoration:none">
+                          
+                              <?php echo $key2['name'] ?>
+                            </a>
+                         </div>
+                       
+
+                      <?php } } ?>
+
+                    </div>
+                  </div>
+                                
+                <!-- </a> -->
                 </div>
 
             <?php } ?>
