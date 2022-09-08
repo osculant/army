@@ -71,7 +71,7 @@
     height: 11rem;
     background: #64ab92;
     position: absolute;
-    right: -23px;
+    left: -23px;
     border-radius: 50%;
     bottom: -63px;
       }
