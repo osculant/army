@@ -284,8 +284,8 @@
 
 .card_image{
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 13rem;
+  height: 13rem;
   margin-top: 6%;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
@@ -294,8 +294,8 @@
       border-bottom-left-radius: 136px;
     border-bottom-right-radius: 136px;
     margin-top: 20px;
-    min-height: 285px;
-    max-height: 285px;
+    min-height: 256px;
+    max-height: 256px;
     position: absolute;
     bottom: 0;
     overflow: auto;
@@ -384,17 +384,17 @@
             <?php foreach($machine_type as $key){ ?>
                 
                 
-                <div class="card" style="height:30rem;width:14rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;position: relative;">
+                <div class="card" style="height:28rem;width:14rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;position: relative;">
                       <!--   <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>"> -->
                     
                   <center>
                     <div class="image">
-                      <img class="card_image" src="<?php echo base_url('assets/'.$key['image'].'') ?>" >
+                      <img class="card_image" id="card_image_id_<?php echo $key['id'] ?>" src="<?php echo base_url('assets/'.$key['image'].'') ?>" >
                     </div>
                   </center>
-                   <p data-toggle="collapse" href="#multiCollapseExample1<?php echo $key['id'] ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="text-align: center;color:white;text-transform: uppercase;font-size: 1rem;font-weight:700;font-family: 'Volkhov', serif;margin-top:10px"> <?php echo $key['name'] ?></p>
+                   <p id="show_btn_<?php echo $key['id'] ?>" data_id="<?php echo $key['id'] ?>" data_type="hidden" onclick="show_hide(this)" style="text-align: center;color:white;text-transform: uppercase;font-size: 1rem;font-weight:700;font-family: 'Volkhov', serif;margin-top:35px"> <?php echo $key['name'] ?></p>
 
-                   <div class="collapse multi-collapse" id="multiCollapseExample1<?php echo $key['id'] ?>">
+                   <div class=" multi-collapse" id="collapse_div_<?php echo $key['id'] ?>" style="display: none;">
                     <div class="card card-body sub_item_card">
                      
                       <?php foreach($data as $key2){  
@@ -449,7 +449,39 @@ window.onload = function(){
     
     setTimeout(function(){ $('#loader').hide();  $('#main_id').show();   }, 2000);
 
-}  
+}
+
+
+function show_hide(val){
+
+  var id = val.getAttribute('data_id');
+  var type = val.getAttribute('data_type');
+
+  if(type == "hidden"){
+
+    $('#collapse_div_'+id+'').show();
+   
+    $('#show_btn_'+id+'').attr('data_type','shown');
+
+    $('#card_image_id_'+id+'').css('width','5rem');
+    $('#card_image_id_'+id+'').css('height','5rem');
+    $('#card_image_id_'+id+'').css('transition','0.5s');
+     $('#collapse_div_'+id+'').css('transition','0.7s');
+  
+  }else if(type == "shown"){
+
+      $('#collapse_div_'+id+'').hide();
+      $('#show_btn_'+id+'').attr('data_type','hidden');
+  
+       $('#card_image_id_'+id+'').css('width','13rem');
+    $('#card_image_id_'+id+'').css('height','13rem');
+      $('#card_image_id_'+id+'').css('transition','0.5s');
+     $('#collapse_div_'+id+'').css('transition','0.7s');
+  }
+
+
+}
+
 </script>
 
 </html>
