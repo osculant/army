@@ -330,7 +330,7 @@
                    
 
 
-                <h5 style="color: #9FE0CE;font-weight: bold;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h5>
+                <h5 style="color: #9FE0CE;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h5>
                 <p><span class="arc" style="color:#9FE0CE;text-align:left;">  WASTE DISPOSAL SYSTEM</span></p>
              
 
