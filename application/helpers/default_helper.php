@@ -33,6 +33,16 @@ function sub_cat($id){
 }
 
 
+function gallery(){
+
+   $ci =& get_instance(); 
+
+   $ci->db->select("*"); 
+   $ci->db->from("gallery");
+   
+   return $ci->db->get()->result_array();
+
+}
 
 
 

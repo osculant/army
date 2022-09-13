@@ -25,28 +25,12 @@
 
 
       </style>
-      <!--links-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap&family=Pacifico&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-      <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-
-<!-- <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet"> -->
-
-<link href="https://fonts.googleapis.com/css2?family=Combo&family=Volkhov&display=swap" rel="stylesheet">
-      <!--links end-->
-
-      <!--script-->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -54,8 +38,7 @@
       <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
       <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
-      <!--script end-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 
       <style type="text/css">
 
@@ -308,6 +291,137 @@
          font-size: 0.5rem;
          color: white;
         }
+
+
+
+.container.gallery-container {
+    background-color: ;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+@media(max-width: 768px){
+    .tz-gallery{
+            padding: 18px;
+    }
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: ;
+    font-size: 26px;
+    
+    content: '';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+  button{
+    display: block;
+  }
+
+  .baguetteBox-button{
+    display: block;
+  }
+
+  #baguetteBox-overlay .full-image img {
+    max-height: 62%; 
+    max-width: 77%;
+  }
+
+  .col-sm-6{
+    margin-bottom:10px;
+  }
+}
+
+
+
+.image_ga{
+    height: 18rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin: 2px;
+}
+
+@media(max-width: 768px){
+    .image_ga{
+    height: 10rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    margin: 0px;
+}
+
+.container.gallery-container{
+  padding: 0px 16px !important;
+   
+}
+
+}
+
       </style>
 </head>
 <body style="height:100vh;overflow:hidden;background-color:black">
@@ -359,7 +473,6 @@
     <a href="<?php echo base_url('index.php/contact_us') ?>">Contact US</a>
     <a href="<?php echo base_url('index.php/about_us') ?>">About Us</a>
     <a href="<?php echo base_url('index.php/welcome/gallery') ?>">Gallery</a>
-    <!-- <a href="https://www.tripleodiagnostics.com">Visit Our Website</a> -->
 
     <!-- <a href="<?php echo base_url('index.php/login/logout') ?>">Logout</a> -->
     
@@ -375,49 +488,97 @@
 
          <div class="navigation1">
 
-            <p>HOME / CATEGORY</p>
+            <p>HOME / GALLERY</p>
       
          </div>
 
-          <div class="container"  style="display:-webkit-inline-box;overflow-x: scroll;margin-top: 50px;">
+          <div class="container  gallery-container" >
             
 
-            <?php foreach($machine_type as $key){ ?>
-                
-                
-                <div class="card" style="height:28rem;width:14rem;margin: 0 12px;background: #8AD08C;border-radius: 136px ;position: relative;">
-                      <!--   <a href="<?php echo base_url('index.php/welcome/main?id='.$key['id'].'') ?>"> -->
-                    
-                  <center>
-                    <div class="image">
-                      <img class="card_image" id="card_image_id_<?php echo $key['id'] ?>" src="<?php echo base_url('assets/'.$key['image'].'') ?>" >
-                    </div>
-                  </center>
-                   <p id="show_btn_<?php echo $key['id'] ?>" data_id="<?php echo $key['id'] ?>" data_type="hidden" onclick="show_hide(this)" style="text-align: center;color:white;text-transform: uppercase;font-size: 1rem;font-weight:700;font-family: 'Volkhov', serif;margin-top:35px"> <?php echo $key['name'] ?></p>
 
-                   <div class=" multi-collapse" id="collapse_div_<?php echo $key['id'] ?>" style="display: none;">
-                    <div class="card card-body sub_item_card">
-                     
-                      <?php foreach($data as $key2){  
+            <!--  <h1 style="font-family: 'Dancing Script', cursive; "> Our Gallery</h1>
+    <center><hr style="width: 10rem;border: 1px solid;"></center> -->
+   <div class="row d-flex justify-content-center" style="margin-top:20px">
+       
+       <button onclick="show_image()" class="btn btn-light btn-outline-success" style="margin:10px">PHOTO'S</button>
 
-                        if($key['id'] == $key2['machine_type']){ ?>
-                         <div class="card" style="border-radius: 55px;padding: 10px;text-align: center;margin: 5px;box-shadow: 0px 1px 8px #8ad08c;color: black;text-decoration: none;">
-                           <a href="<?php echo base_url('index.php/Welcome/detail?id='.$key2['id'].'') ?>" class="item-link item-content" style="padding:15px;    margin-top: -6px;position: inherit;color:black;text-decoration:none">
-                          
-                              <?php echo $key2['name'] ?>
+        <button onclick="show_video()" class="btn btn-light btn-outline-success" style="margin:10px">VIDEO'S</button>
+   </div>
+
+
+   <div id="photo" >
+     
+                <div class="tz-gallery">
+
+                    <div class="row">
+
+                        <?php $gallery = gallery(); ?>
+
+                        <?php foreach($gallery as $key){ 
+
+                            if($key['type'] == "image"){
+                            ?>
+
+                        <div class="col-6 col-md-4">
+                            <a class="lightbox" href="<?php echo $key['file']; ?>">
+                                <img class="image_ga" src="<?php echo $key['file']; ?>" alt="Bridge">
                             </a>
-                         </div>
+                        </div>
+
+                    <?php } } ?>
+                        <!-- <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="<?php echo base_url('assets/images/cover.jpg') ?>">
+                                <img class="image_ga" src="<?php echo base_url('assets/images/cover.jpg') ?>" alt="Park">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="<?php echo base_url('assets/images/cover2.jpg') ?>">
+                                <img class="image_ga" src="<?php echo base_url('assets/images/cover2.jpg') ?>" alt="Tunnel">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <a class="lightbox" href="<?php echo base_url('assets/images/cover10.jpg') ?>">
+                                <img class="image_ga" src="<?php echo base_url('assets/images/cover10.jpg') ?>" alt="Traffic">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="<?php echo base_url('assets/images/gau.webp') ?>">
+                                <img class="image_ga" src="<?php echo base_url('assets/images/gau.webp') ?>" alt="Coast">
+                            </a>
+                        </div>  -->
                        
 
-                      <?php } } ?>
-
                     </div>
-                  </div>
-                                
-                <!-- </a> -->
+
                 </div>
 
-            <?php } ?>
+    </div>
+
+
+    <div id="video" style="display:none">
+        
+        <div class="row" style="margin-top:20px">
+            
+            
+
+                        <?php foreach($gallery as $key){ 
+
+                            if($key['type'] == "video"){
+                            ?>
+
+
+            <div class="col-md-4 col-12" >
+              <iframe style="width: inherit;margin: 5px" src="<?php echo $key['file'] ?>" title="YouTube video player"  allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+        <?php } } ?>
+
+        </div>
+
+    </div>
+
+          
 
 
           
@@ -453,35 +614,20 @@ window.onload = function(){
 }
 
 
-function show_hide(val){
-
-  var id = val.getAttribute('data_id');
-  var type = val.getAttribute('data_type');
-
-  if(type == "hidden"){
-
-    $('#collapse_div_'+id+'').show();
-   
-    $('#show_btn_'+id+'').attr('data_type','shown');
-
-    $('#card_image_id_'+id+'').css('width','5rem');
-    $('#card_image_id_'+id+'').css('height','5rem');
-    $('#card_image_id_'+id+'').css('transition','0.5s');
-     $('#collapse_div_'+id+'').css('transition','0.7s');
-  
-  }else if(type == "shown"){
-
-      $('#collapse_div_'+id+'').hide();
-      $('#show_btn_'+id+'').attr('data_type','hidden');
-  
-       $('#card_image_id_'+id+'').css('width','13rem');
-    $('#card_image_id_'+id+'').css('height','13rem');
-      $('#card_image_id_'+id+'').css('transition','0.5s');
-     $('#collapse_div_'+id+'').css('transition','0.7s');
-  }
+baguetteBox.run('.tz-gallery');
 
 
+
+function show_image(){
+    $('#photo').show();
+     $('#video').hide();
 }
+
+function show_video(){
+    $('#video').show();
+     $('#photo').hide();
+}
+
 
 </script>
 

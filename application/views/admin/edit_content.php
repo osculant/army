@@ -76,12 +76,12 @@
 
 
                                        <hr>
-                                       <?php if($content_detail['icon'] != ""){ ?>
+                                   <!--     <?php if($content_detail['icon'] != ""){ ?>
                                        <img src="<?php echo base_url().$content_detail['icon'] ?>" style="width:7rem">
                                        <?php } ?>
                                        <br> 
                                        <label>Icon</label>
-                                       <input type="file" class="form-control" name="icon">
+                                       <input type="file" class="form-control" name="icon"> -->
 
 
 
@@ -95,7 +95,7 @@
                                        <input type="text" name="link" class="form-control" value="<?php echo $content_detail['link'] ?>">
 
 
-                                       <label>Audio File</label>
+                                      <!--  <label>Audio File</label>
                                        <input type="file" name="audio" class="form-control">
                                         <?php if($content_detail['audio'] != ""){ ?>
 
@@ -106,7 +106,7 @@
                                         </audio>
 
                                         <?php } ?>
-                                       <br>
+                                       <br> -->
 
                                        <input type="hidden" name="id" value="<?php echo $content_detail['id'] ?>">
                                        <button class="btn btn-success">Submit <i class="fa fa-spinner fa-spin" style="display:none" id="spinner"></i></button>

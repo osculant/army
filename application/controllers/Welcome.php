@@ -75,6 +75,12 @@ public function forgot_password(){
   $this->load->view('forget_password');
 }
 
+
+  public function gallery(){
+    $this->load->view('gallery');
+  }
+  
+
 public function testing_py(){
     // ob_start();
     // system('/lib/python2.7/site-packages /var/www/html/orascan/assets/test.py', $return_value);

@@ -75,8 +75,8 @@
                                        <label>Title</label>
                                        <input type="text" class="form-control" name="name" placeholder="Enter Title" required>
 
-                                       <label>Icon</label>
-                                       <input type="file" class="form-control" name="icon" required>
+                                       <!-- <label>Icon</label>
+                                       <input type="file" class="form-control" name="icon" required> -->
 
 
 
@@ -90,8 +90,8 @@
                                        <input type="text" name="link" class="form-control" required>
 
 
-                                       <label>Audio File</label>
-                                       <input type="file" name="audio" class="form-control">
+                                       <!-- <label>Audio File</label> -->
+                                       <!-- <input type="file" name="audio" class="form-control"> -->
                                        <br>
 
                                        <button class="btn btn-success">Submit <i class="fa fa-spinner fa-spin" style="display:none" id="spinner"></i></button>

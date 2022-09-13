@@ -72,53 +72,53 @@ function index(){
 
 
 
-        if(isset($_FILES['icon']["name"])){
-            $config['upload_path'] = "./assets/files/";
-              $config['allowed_types'] = 'jpg|jpeg|png';
-              $this->load->library('upload', $config);
+        // if(isset($_FILES['icon']["name"])){
+        //     $config['upload_path'] = "./assets/files/";
+        //       $config['allowed_types'] = 'jpg|jpeg|png';
+        //       $this->load->library('upload', $config);
 
-              if (!$this->upload->do_upload('icon') ) {
-                  // $this->load->view('admin/admin', $error);
-                  $error = array('error' => $this->upload->display_errors());
-                  echo '<p style="color:red">The filetype you are attempting to upload is not allowed.</p>';
-                  // print_r($error);
-              } else {
-                $data = array('image_metadata' => $this->upload->data());
-                // echo  $data['image_metadata']["file_name"];
-                $name=$data['image_metadata']["file_name"];
-                $path= 'assets/files/'.$name;
-                // print_r($data);
-                $imagearr=array(
+        //       if (!$this->upload->do_upload('icon') ) {
+        //           // $this->load->view('admin/admin', $error);
+        //           $error = array('error' => $this->upload->display_errors());
+        //           echo '<p style="color:red">The filetype you are attempting to upload is not allowed.</p>';
+        //           // print_r($error);
+        //       } else {
+        //         $data = array('image_metadata' => $this->upload->data());
+        //         // echo  $data['image_metadata']["file_name"];
+        //         $name=$data['image_metadata']["file_name"];
+        //         $path= 'assets/files/'.$name;
+        //         // print_r($data);
+        //         $imagearr=array(
                   
                   
-                  'icon'   => $path,
+        //           'icon'   => $path,
               
-                );
+        //         );
 
                
-            }
-        } 
+        //     }
+        // } 
 
 
 
-        if ($_FILES['audio']['name'] != "") {
-            if (($_FILES['audio']['type'] == "audio/mp3") || ($_FILES['audio']['type'] == "audio/mpeg")) {
-                if ($_FILES["audio"]["size"] < 16777216) {           
-                        move_uploaded_file($_FILES["audio"]["tmp_name"], "assets/files/" . $_FILES["audio"]["name"]);
-                       // echo "File has been stored in your uploads directory.";
-                      }
-                else {    
+        // if ($_FILES['audio']['name'] != "") {
+        //     if (($_FILES['audio']['type'] == "audio/mp3") || ($_FILES['audio']['type'] == "audio/mpeg")) {
+        //         if ($_FILES["audio"]["size"] < 16777216) {           
+        //                 move_uploaded_file($_FILES["audio"]["tmp_name"], "assets/files/" . $_FILES["audio"]["name"]);
+        //                // echo "File has been stored in your uploads directory.";
+        //               }
+        //         else {    
 
-                  // echo "Please upload a file that is under 2 mb!";
+        //           // echo "Please upload a file that is under 2 mb!";
 
-                }
+        //         }
                 
-            } else {
+        //     } else {
               
-              // echo "Please upload a mp3 file!";
+        //       // echo "Please upload a mp3 file!";
         
-            exit;}
-        }
+        //     exit;}
+        // }
 
 
       
@@ -128,8 +128,8 @@ function index(){
       'name'=> $this->input->post('name'),
       'link'=> $this->input->post('link'),
       'description'=> $this->input->post('description'),
-      'icon'=> $imagearr['icon'],
-      'audio'=> $_FILES["audio"]["name"],
+      // 'icon'=> $imagearr['icon'],
+      // 'audio'=> $_FILES["audio"]["name"],
       'machine_type'=> $this->input->post('machine_type'),
     );
 
@@ -189,76 +189,76 @@ function index(){
     $data = $this->db->get('links')->row_array();
 
 
-        if(isset($_FILES['icon']["name"])){
-            $config['upload_path'] = "./assets/files/";
-              $config['allowed_types'] = 'jpg|jpeg|png';
-              $this->load->library('upload', $config);
+        // if(isset($_FILES['icon']["name"])){
+        //     $config['upload_path'] = "./assets/files/";
+        //       $config['allowed_types'] = 'jpg|jpeg|png';
+        //       $this->load->library('upload', $config);
 
-              if (!$this->upload->do_upload('icon') ) {
-                  // $this->load->view('admin/admin', $error);
-                  $error = array('error' => $this->upload->display_errors());
-                  // echo '<p style="color:red">The filetype you are attempting to upload is not allowed.</p>';
-                  // print_r($error);
-              } else {
-                $data = array('image_metadata' => $this->upload->data());
-                // echo  $data['image_metadata']["file_name"];
-                $name=$data['image_metadata']["file_name"];
-                $path= 'assets/files/'.$name;
-                // print_r($data);
-                $imagearr=array(
+        //       if (!$this->upload->do_upload('icon') ) {
+        //           // $this->load->view('admin/admin', $error);
+        //           $error = array('error' => $this->upload->display_errors());
+        //           // echo '<p style="color:red">The filetype you are attempting to upload is not allowed.</p>';
+        //           // print_r($error);
+        //       } else {
+        //         $data = array('image_metadata' => $this->upload->data());
+        //         // echo  $data['image_metadata']["file_name"];
+        //         $name=$data['image_metadata']["file_name"];
+        //         $path= 'assets/files/'.$name;
+        //         // print_r($data);
+        //         $imagearr=array(
                   
                   
-                  'icon'   => $path,
+        //           'icon'   => $path,
               
-                );
+        //         );
 
                
-            }
-        } 
+        //     }
+        // } 
 
 
 
-        if ($_FILES['audio']['name'] != "") {
-            if (($_FILES['audio']['type'] == "audio/mp3") || ($_FILES['audio']['type'] == "audio/mpeg")) {
-                if ($_FILES["audio"]["size"] < 16777216) {           
-                        move_uploaded_file($_FILES["audio"]["tmp_name"], "assets/files/" . $_FILES["audio"]["name"]);
-                       // echo "File has been stored in your uploads directory.";
-                      }
-                else {    
+        // if ($_FILES['audio']['name'] != "") {
+        //     if (($_FILES['audio']['type'] == "audio/mp3") || ($_FILES['audio']['type'] == "audio/mpeg")) {
+        //         if ($_FILES["audio"]["size"] < 16777216) {           
+        //                 move_uploaded_file($_FILES["audio"]["tmp_name"], "assets/files/" . $_FILES["audio"]["name"]);
+        //                // echo "File has been stored in your uploads directory.";
+        //               }
+        //         else {    
 
-                  // echo "Please upload a file that is under 2 mb!";
+        //           // echo "Please upload a file that is under 2 mb!";
 
-                }
+        //         }
                 
-            } else {
+        //     } else {
               
-              // echo "Please upload a mp3 file!";
+        //       // echo "Please upload a mp3 file!";
         
-            exit;}
-        }
+        //     exit;}
+        // }
 
 
-if($_FILES['icon']["name"] != ""){
+// if($_FILES['icon']["name"] != ""){
 
-  $icon = $imagearr['icon'];
+//   $icon = $imagearr['icon'];
 
-}else{
+// }else{
 
 
 
-  $icon = $data['icon'];
+//   $icon = $data['icon'];
 
-}
+// }
      
-if ($_FILES['audio']['name'] != "") {
+// if ($_FILES['audio']['name'] != "") {
 
-  $audio = $_FILES['audio']['name'];
+//   $audio = $_FILES['audio']['name'];
 
-}else{
+// }else{
 
-$audio = $data['audio'];
+// $audio = $data['audio'];
 
-}
+// }
 
 
 
@@ -268,8 +268,8 @@ $audio = $data['audio'];
       'name'=> $this->input->post('name'),
       'link'=> $this->input->post('link'),
       'description'=> $this->input->post('description'),
-      'icon'=> $icon,
-      'audio'=> $audio,
+      // 'icon'=> $icon,
+      // 'audio'=> $audio,
             'machine_type'=> $this->input->post('machine_type'),
     );
 
@@ -295,6 +295,86 @@ $audio = $data['audio'];
   }
 	
  
+
+ public function add_gallery(){
+  $this->load->view('admin/add_gallery');
+}
+
+
+
+public function add_video(){
+
+  $input = $this->input->post();
+
+  $arr = array(
+    'file'=> $input['video_link'],
+    'type'=>'video',
+  );
+  $key = $this->db->insert('gallery',$arr);
+
+  if($key){
+    echo "done";
+  }
+
+}
+
+
+public function add_image(){
+
+
+  if(isset($_FILES['file']["name"])){
+        $config['upload_path'] = "./assets/images/";
+        $config['allowed_types'] = 'jpg|jpeg|png';
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload('file') ) {
+            // $this->load->view('admin/admin', $error);
+            $error = array('error' => $this->upload->display_errors());
+            echo '<p style="color:red">The filetype you are attempting to upload is not allowed.</p>';
+            // print_r($error);
+        } else {
+          $data = array('image_metadata' => $this->upload->data());
+          // echo  $data['image_metadata']["file_name"];
+          $name=$data['image_metadata']["file_name"];
+          $path= 'assets/images/'.$name;
+          // print_r($data);
+          $imagearr=array(
+            
+            
+            'image'   => base_url().$path,
+        
+          );
+
+         
+        }
+  }
+
+
+  $arr = array(
+    'file'=> $imagearr['image'],
+    'type'=> 'image',
+  );
+
+$key =   $this->db->insert('gallery',$arr);
+
+if($key){
+  echo "done";
+}
+
+
+}
+
+
+
+public function delete(){
+  $input = $this->input->post();
+
+  $this->db->where('id',$input['id']);
+  $this->db->delete($input['table_name']);
+
+  echo "done";
+}
+
 
 }
 

@@ -18,7 +18,9 @@
             </li>
             
            
-
+             <li>
+                <a href="<?php echo base_url('index.php/admin/add_gallery') ?>" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Gallery </span> </a>
+            </li>
          
           <!--   <li>
             <a href="<?php echo base_url('index.php/admin/add_content') ?>" class="waves-effect"><i class="mdi mdi-account-location"></i><span>  Add Content  </a>
