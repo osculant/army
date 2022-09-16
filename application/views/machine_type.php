@@ -337,7 +337,8 @@
                </div>
                <div class="right d-flex">
                   
-                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;margin-top: 16px;margin-left: 77px;font-size: 1.5rem;"></i></p>
+                  <p><i onclick="openNav()" class="fa fa-bars" style="color:gray;margin-top:0;font-size: 1.5rem;position: absolute;
+    right: 0;"></i></p>
                
                </div>
             </div>
