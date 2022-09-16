@@ -422,9 +422,15 @@
 
 }
 
+#baguetteBox-overlay .full-image {
+   
+    background: black !important;
+    opacity: 0.8 !important;
+}
+
       </style>
 </head>
-<body style="height:100vh;overflow:hidden;background-color:black">
+<body style="background-color:black">
 <!-- <body style="background-image: url('<?php echo base_url('assets/bg.jpg') ?>');">   -->
 
 <div class="lds-ripple" id="loader" style="background-color:black"><div></div><div></div></div>
