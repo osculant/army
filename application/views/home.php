@@ -70,7 +70,7 @@
   /*top: 7%;*/
   width: 100%;
   height: 100%;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
   /*background-image: url('<?php echo base_url('assets/bg.jpg') ?>');*/
   background-repeat: no-repeat;
   background-position: 50% 0;
