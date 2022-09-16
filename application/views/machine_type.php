@@ -42,7 +42,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
 
 <!-- <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet"> -->
-
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Combo&family=Volkhov&display=swap" rel="stylesheet">
       <!--links end-->
 
@@ -330,8 +330,8 @@
                    
 
 
-                <h5 style="color: #9FE0CE;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h5>
-                <p><span class="arc" style="color:#9FE0CE;text-align:left;">  WASTE DISPOSAL SYSTEM</span></p>
+                <h5 style="color: #9FE0CE;margin-top: 28px;margin-left: 0px;text-align: left;font-family: 'Rubik Moonrocks', cursive;">DHRUVA ECO-FRIENDLY</h5>
+                <p><span class="arc" style="color:#9FE0CE;text-align:left;font-family: 'Rubik Moonrocks', cursive;">  WASTE DISPOSAL SYSTEM</span></p>
              
 
                </div>

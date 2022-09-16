@@ -40,6 +40,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
       <!--links end-->
 
       <!--script-->
@@ -155,8 +157,8 @@
               <!-- <center><img class="logoimage" src="<?php echo base_url('assets/logo.png') ?>" ></center> -->
 
               <center>
-                <h4 style="color: #9FE0CE;font-weight: bold;margin-top: 25px;margin-left: 21px;">DHRUVA ECO-FRIENDLY</h4>
-                <p><span class="arc" style="color:#9FE0CE">  WASTE DISPOSAL SYSTEM</span></p>
+                <h4 style="color: #9FE0CE;margin-top: 25px;margin-left: 21px;font-family: 'Rubik Moonrocks', cursive;">DHRUVA ECO-FRIENDLY</h4>
+                <p><span class="arc" style="color:#9FE0CE;font-family: 'Rubik Moonrocks', cursive;">  WASTE DISPOSAL SYSTEM</span></p>
               </center>
             </div> 
           </div>

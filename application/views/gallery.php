@@ -24,7 +24,10 @@
      
 
 
+ 
       </style>
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -450,8 +453,8 @@
                    
 
 
-                <h5 style="color: #9FE0CE;margin-top: 28px;margin-left: 0px;text-align: left;">DHRUVA ECO-FRIENDLY</h5>
-                <p><span class="arc" style="color:#9FE0CE;text-align:left;">  WASTE DISPOSAL SYSTEM</span></p>
+                <h5 style="color: #9FE0CE;margin-top: 28px;margin-left: 0px;text-align: left;font-family: 'Rubik Moonrocks', cursive;">DHRUVA ECO-FRIENDLY</h5>
+                <p><span class="arc" style="color:#9FE0CE;text-align:left;font-family: 'Rubik Moonrocks', cursive;">  WASTE DISPOSAL SYSTEM</span></p>
              
 
                </div>
