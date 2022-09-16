@@ -469,14 +469,8 @@
   <!-- <hr style="margin-top: 0rem;"> -->
 
     
-    <a href="<?php echo base_url('index.php') ?>">Home</a>
-    <a href="<?php echo base_url('index.php/contact_us') ?>">Contact US</a>
-    <a href="<?php echo base_url('index.php/about_us') ?>">About Us</a>
-    <a href="<?php echo base_url('index.php/welcome/gallery') ?>">Gallery</a>
+  <?php include "common/sidebar.php" ?>
 
-    <!-- <a href="<?php echo base_url('index.php/login/logout') ?>">Logout</a> -->
-    
-    
   </div>
    
   </div>
@@ -488,7 +482,7 @@
 
          <div class="navigation1">
 
-            <p>HOME / GALLERY</p>
+            <p><a href="<?php echo base_url(); ?>" style="text-decoration: none;color: white;">HOME </a> / GALLERY</p>
       
          </div>
 
@@ -526,26 +520,7 @@
                         </div>
 
                     <?php } } ?>
-                        <!-- <div class="col-sm-6 col-md-4">
-                            <a class="lightbox" href="<?php echo base_url('assets/images/cover.jpg') ?>">
-                                <img class="image_ga" src="<?php echo base_url('assets/images/cover.jpg') ?>" alt="Park">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <a class="lightbox" href="<?php echo base_url('assets/images/cover2.jpg') ?>">
-                                <img class="image_ga" src="<?php echo base_url('assets/images/cover2.jpg') ?>" alt="Tunnel">
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <a class="lightbox" href="<?php echo base_url('assets/images/cover10.jpg') ?>">
-                                <img class="image_ga" src="<?php echo base_url('assets/images/cover10.jpg') ?>" alt="Traffic">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <a class="lightbox" href="<?php echo base_url('assets/images/gau.webp') ?>">
-                                <img class="image_ga" src="<?php echo base_url('assets/images/gau.webp') ?>" alt="Coast">
-                            </a>
-                        </div>  -->
+                        
                        
 
                     </div>

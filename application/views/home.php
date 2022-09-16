@@ -97,11 +97,12 @@
     margin-top: 8px;
     border-radius: 37px;
     font-size: 1.5rem;
-    margin-top: 45px;
+    margin-top: 93px;
     /*position: absolute;*/
     /*bottom: 89px;*/
-    height: 4rem;
-    padding-top: 10px;
+    color: green;
+    height: 3rem;
+    padding-top: 5px;
     width: 15rem;
     /*left: 21%;*/
         /*right: 50%;*/
@@ -169,24 +170,38 @@
                     <img class="d-block w-100" src="<?php echo base_url('assets/11.jpg') ?>" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="<?php echo base_url('assets/12.jpg') ?>" alt="Second slide">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider0.jpeg') ?>" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="<?php echo base_url('assets/13.jpg') ?>" alt="Third slide">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider1.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider2.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider3.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider4.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider5.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider6.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider7.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider8.jpeg') ?>" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="<?php echo base_url('assets/slider9.jpeg') ?>" alt="Second slide">
                   </div>
                   
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="<?php echo base_url('assets/14.jpg') ?>" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="<?php echo base_url('assets/15.jpg') ?>" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="<?php echo base_url('assets/16.jpg') ?>" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="<?php echo base_url('assets/17.jpg') ?>" alt="Third slide">
-                  </div>
+                
+                 
                   
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

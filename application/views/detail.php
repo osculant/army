@@ -174,11 +174,7 @@
   <div class="overlay-content">
   
     
-    <a href="<?php echo base_url('index.php') ?>">Home</a>
-    <a href="<?php echo base_url('index.php/contact_us') ?>">Contact US</a>
-    <a href="<?php echo base_url('index.php/about_us') ?>">About Us</a>
-    <a href="<?php echo base_url('index.php/welcome/gallery') ?>">Gallery</a>
-   
+   <?php include "common/sidebar.php"; ?>
     
     
   </div>
@@ -194,9 +190,13 @@
             $sub_cat = sub_cat($data['id']);
          ?>
 
-         <div class="navigation">
+         <div class="navigation" style="display:flex">
 
-            <p><?php echo $cat['name'] ?> / <?php  echo $sub_cat['name'] ?></p>
+
+            <p><a href="<?php echo base_url(); ?>" style="text-decoration: none;color: white;">Home </a>  / 
+                <a href="<?php echo base_url('index.php/welcome/machine_type'); ?>" style="text-decoration: none;color: white;"><?php echo $cat['name'] ?></a> / 
+               <?php  echo $sub_cat['name'] ?>
+            </p>
       
          </div>
 
@@ -206,9 +206,23 @@
 
          <div class="social-media-col pages-list-col">
             <div class="container animate__animated animate__bounceInRight" style="transition: 0.5s;">
+           
+            <?php if($data['link_type'] == "y" ){ ?>
+
             <iframe width="100%" height="315" 
                 src="<?php echo $data['link'] ?>">
             </iframe>
+           
+            <?php }else{ ?>
+
+                <video width="100%" height="315" controls>
+  <source src="<?php echo $data['link'] ?>" type="video/mp4">
+  
+  Your browser does not support the video tag.
+</video>
+
+            <?php } ?>
+
             </div>
             <br>
             <center><h3><?php echo $data['name'] ?></h3></center>

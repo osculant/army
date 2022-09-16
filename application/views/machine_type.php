@@ -355,13 +355,7 @@
   <!-- <hr style="margin-top: 0rem;"> -->
 
     
-    <a href="<?php echo base_url('index.php') ?>">Home</a>
-    <a href="<?php echo base_url('index.php/contact_us') ?>">Contact US</a>
-    <a href="<?php echo base_url('index.php/about_us') ?>">About Us</a>
-    <a href="<?php echo base_url('index.php/welcome/gallery') ?>">Gallery</a>
-    <!-- <a href="https://www.tripleodiagnostics.com">Visit Our Website</a> -->
-
-    <!-- <a href="<?php echo base_url('index.php/login/logout') ?>">Logout</a> -->
+   <?php include "common/sidebar.php" ?>
     
     
   </div>
@@ -375,7 +369,8 @@
 
          <div class="navigation1">
 
-            <p>HOME / CATEGORY</p>
+            <p> 
+              <a href="<?php echo base_url(); ?>" style="text-decoration: none;color: white;">Home </a> / Category</p>
       
          </div>
 
