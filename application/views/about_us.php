@@ -135,11 +135,43 @@
          margin-left: 22px;
          font-size: 0.5rem;
         }
-
+        .cloud{ 
+            margin-top:70px;
+            width:350px;
+            height:100%;
+            background:#ECEFF1;
+            color: black;
+            position:relative;
+            left: 20px;
+            overflow: auto;
+            text-align: center;
+            /* background:inherit; */
+            /* box-shadow: 10px 10px rgba(0,0,0,0.2); */
+            /* border-radius:100px; */
+         }
+         /* .cloud::after, .cloud::before{
+             content:"";
+             position:relative;
+             display:inline-block;
+             background:inherit;
+             border-radius:inherit;
+         } */
+         /* .cloud::after{
+             width:100px;
+             height:100px;
+             top:-220px;
+             left:50px;
+         /* } */
+         /* .cloud::before{
+             width:100%;
+             height:100%;
+             top: -70px;
+             left:130px;
+         } */ 
       /*------------overlay for header end-----------*/
 </style>
    </head>
-   <body style="height:100vh">
+   <body style="height:100vh;">
      
 
       <div class="main-wrapper">
@@ -206,7 +238,26 @@
                <center>
                   <h5 style="color:white;">ABOUT US</h5>
                </center>
+            <div class="row">
+               <span style="margin-left:1rem;"><ol>
+                     <li>Udhampur Mil station inhabited by over 34,000 of Mil population spread across 25 acres of land was tell now managed by a humble str of 170 conservancy staff under the stn HQ, of Udhampur stn. The existing setup for garbage disposal in stn was not serving te purpose and was eventually smothering as land fill.</li><br>
+                     <li>To combat this issue, a transmuting step was taken by Maj Gen SS Patil,        GOC HQ 71 Sub Area to choke a set up with a vision of clear and better cantonment. ‘Druva Eco-friendly Waste Disposal System’ also known as DEWS was conceptualized.  For this the a location was earmarked and required setup for waste disposal was built. This location being vast and away from civ area along with the availability of existing infrastructure mitigated the requirement of any fresh construction was therefore selected.</li><br>
+                     <li>The project is fully operational in which heavy duty machines for disposal of plastic, glass, wet waste and pits was effectuated. The functioning of DEWS is base on the waste received which is broadly categorised as wet waste compressing of kitchen waste and dry waste; which is suggested at source, are recd in the segregation and processing are of DEWS. Here, further segregation of dry waste into plastic, glass, paper and domestic hazardous items is done.</li><br>
+                     <li>The segregated dry waste then goes to their designated work station where these heavy duty machine aids in their disposal. Like the plastic waste goes to the hydraulic bailing machine where it is compressed into smaller volumes stock which is easy for transportation and storing. This plastic is also intended to be used for making eco-friendly bricks by a plastic brick making machine which is proposed to be installed in Phase II of the project.</li><br>
+                     <li>Similarly, a set up for paper recycling plant under installation for paper recycling.Paper and cardboards waste is collected from the offices in the eco-friendly vehicle ‘Vidhyut Sarthi’ is recycled to make paper bag and office file covers. Presently, they are being made under local arrangements. However, installation of paper recycling plant is under way in this project.</li><br>
+                     <li>The glass waste goes to the glass sanding machine while it is shredded into fine sand, making it safe to be used in decoration of areas in parks, golf ground etc. The wet waste of kitchen discards etc is similarly shredded to from a mulch which is mixed with dry garden waste that is also pulverized in the garden waste shredding machine. The mixture is then moved to the compost pit area where the composting is done. The composting process takes about approx three months for which more compost pits are under construction.</li><br>
+                     <li>The domestic hazardous waste such as diapers, sanitary napkins, needles, shaving blades etc are the toughest to dispose. Therefore they are incinerated in a Kill Waste Machine which disposes these hazardous waste in an eco-friendly manner. This machine does not require any continuous supply of fuel to burn just an ignition to start the burning process. The machine is incorporated with activated charcoal filters which absorbs carbon from the smoke produced by burning. A water tank installed supplies water from the pipeline that drizzle water on the activated charcoal filter which flushes out carbon from the system and the smoke emitted carbon free and environment friendly. </li><br>
+                     <li>A small initiative started by HQ 71 Sub Area in Udhampur military station has already brought huge transformation in terms of cleanliness. However, further actions at indl level needs to be taken for better results.
+               </ol><br>
+	                  Few steps that can be ensured:-	
+                     <ol style="list-style-type: lower-alpha;">
+                        <li>	Segregate your household waste into wet and dry waste religiously.  </li>
+                        <li>	Do not produce garbage.</li>
+                        <li>	Always recycle and reuse.</li>
+                     </ol>
+               </span>
 
+            </div>
             </div>
          </div>
        </div>            

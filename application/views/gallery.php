@@ -503,9 +503,9 @@
     <center><hr style="width: 10rem;border: 1px solid;"></center> -->
    <div class="row d-flex justify-content-center" style="margin-top:20px">
        
-       <button onclick="show_image()" class="btn btn-light btn-outline-success" style="margin:10px">PHOTO'S</button>
+       <button onclick="show_image()" class="btn btn-light btn-outline-success" style="margin:10px">PHOTOS</button>
 
-        <button onclick="show_video()" class="btn btn-light btn-outline-success" style="margin:10px">VIDEO'S</button>
+        <button onclick="show_video()" class="btn btn-light btn-outline-success" style="margin:10px">VIDEOS</button>
    </div>
 
 
